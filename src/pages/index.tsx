@@ -1,6 +1,15 @@
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Home() {
+const HomePage = () => {
   const { t } = useTranslation("common");
-  return <h1 className='text-7xl font-bold'>{t("header")}</h1>;
-}
+  return <h1 className='font-bold text-7xl'>{t("header")}</h1>;
+};
+
+export default HomePage;
+
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
