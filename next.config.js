@@ -5,6 +5,9 @@ const nextConfig = {
   reactStrictMode: true,
   i18n,
   distDir: "build",
+  images: {
+    domains: ["images.unsplash.com"],
+  },
 };
 
 module.exports = nextConfig;

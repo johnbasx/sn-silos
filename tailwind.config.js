@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "custom-img": "url('/images/hero/hero-image-01.jpg')",
+        "simon-img": "url('/images/hero/simon.jpg')",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/forms")],
 };
