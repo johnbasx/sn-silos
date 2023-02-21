@@ -86,7 +86,7 @@ const DiseaseControl = () => {
           </article>
         </div>
       </div>
-      <section className='relative px-6 py-12 bg-fixed bg-center bg-no-repeat bg-cover bg-blend-luminosity bg-leaves bg-emerald-900'>
+      <section className='relative px-6 py-12 bg-fixed bg-center bg-no-repeat bg-cover bg-blend-luminosity bg-none md:bg-leaves bg-emerald-900'>
         <article className='mx-auto text-white drop-shadow-lg max-w-7xl'>
           <div className='grid grid-cols-1 md:grid-cols-2'>
             <div className={clsx("w-full")}>

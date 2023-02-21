@@ -84,11 +84,8 @@ const ServicesWeAreOffering = () => {
                 className='flex flex-col gap-3 p-4 bg-gray-50 rounded-2xl aspect-square'
               >
                 <item.Icon className='w-12 h-12 text-emerald-600' />
-                <h3 className='text-xl font-bold'>Heading</h3>
-                <p className='line-clamp-4'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore est delectus voluptatem.
-                </p>
+                <h3 className='text-xl font-bold'>{item.name}</h3>
+                <p className='line-clamp-4'>{item.about}</p>
               </div>
             ))}
           </div>
