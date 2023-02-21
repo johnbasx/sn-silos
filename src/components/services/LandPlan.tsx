@@ -79,10 +79,10 @@ const LandPlan = () => {
             >
               {landPlanTabs.map((tabItem, idx) => (
                 <li
-                  key={"land-tab-" + tabItem.id}
+                  key={tabItem.id}
                   className='flex-auto mr-2 -mb-px text-center last:mr-0'
                 >
-                  <a
+                  <Link
                     className={
                       "font-semibold px-5 rounded-md py-3 block duration-200" +
                       (openTab === tabItem.tabNo
@@ -98,7 +98,7 @@ const LandPlan = () => {
                     role='tablist'
                   >
                     {tabItem.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -106,52 +106,48 @@ const LandPlan = () => {
               <div className='flex-auto'>
                 <div className='tab-content tab-space'>
                   {landPlanTabs.map((tabItem, idx) => (
-                    <>
-                      <div
-                        key={"tab-detail-" + tabItem.id}
-                        className={
-                          openTab === tabItem.tabNo ? "block" : "hidden"
-                        }
-                        id={"link" + tabItem.tabNo}
-                      >
-                        <div className='py-8 mx-auto max-w-screen-2xl'>
-                          <div className='grid grid-cols-1 md:grid-cols-2'>
-                            <div className='p-8 rounded-t-2xl md:rounded-none md:rounded-l-2xl bg-emerald-900 md:p-12 lg:px-16 lg:py-24'>
-                              <div className='max-w-xl mx-auto text-left'>
-                                <h2 className='text-2xl font-bold text-white md:text-3xl'>
-                                  {tabItem.heading}
-                                </h2>
+                    <div
+                      key={"tab-detail-" + tabItem.id}
+                      className={openTab === tabItem.tabNo ? "block" : "hidden"}
+                      id={"link" + tabItem.tabNo}
+                    >
+                      <div className='py-8 mx-auto max-w-screen-2xl'>
+                        <div className='grid grid-cols-1 md:grid-cols-2'>
+                          <div className='p-8 rounded-t-2xl md:rounded-none md:rounded-l-2xl bg-emerald-900 md:p-12 lg:px-16 lg:py-24'>
+                            <div className='max-w-xl mx-auto text-left'>
+                              <h2 className='text-2xl font-bold text-white md:text-3xl'>
+                                {tabItem.heading}
+                              </h2>
 
-                                <p className='mt-4 text-white/90'>
-                                  {tabItem.about}
-                                </p>
+                              <p className='mt-4 text-white/90'>
+                                {tabItem.about}
+                              </p>
 
-                                <div className='mt-4 md:mt-8'>
-                                  <a
-                                    href='#'
-                                    className='inline-block px-8 py-2.5 text-sm font-semibold transition bg-white border border-white rounded text-emerald-800 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400'
-                                  >
-                                    Get Started Today
-                                  </a>
-                                </div>
+                              <div className='mt-4 md:mt-8'>
+                                <a
+                                  href='#'
+                                  className='inline-block px-8 py-2.5 text-sm font-semibold transition bg-white border border-white rounded text-emerald-800 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400'
+                                >
+                                  Get Started Today
+                                </a>
                               </div>
                             </div>
+                          </div>
 
-                            <div className='grid grid-cols-1'>
-                              <Image
-                                width={100}
-                                height={100}
-                                alt={tabItem.heading}
-                                src={tabItem.image}
-                                priority
-                                unoptimized
-                                className='object-cover w-full h-auto overflow-hidden rounded-b-2xl md:rounded-none md:rounded-r-2xl aspect-square'
-                              />
-                            </div>
+                          <div className='grid grid-cols-1'>
+                            <Image
+                              width={100}
+                              height={100}
+                              alt={tabItem.heading}
+                              src={tabItem.image}
+                              priority
+                              unoptimized
+                              className='object-cover w-full h-auto overflow-hidden rounded-b-2xl md:rounded-none md:rounded-r-2xl aspect-square'
+                            />
                           </div>
                         </div>
                       </div>
-                    </>
+                    </div>
                   ))}
 
                   {/* <div

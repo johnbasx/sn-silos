@@ -175,26 +175,24 @@ const Footer = () => {
 
           <div className='grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left'>
             {footerLinks.map((item, idx) => (
-              <>
-                <div key={"footer-item-" + idx + item.id}>
-                  <h4 className='font-semibold text-white'>{item.category}</h4>
+              <div key={"footer-item-" + idx + item.id}>
+                <h4 className='font-semibold text-white'>{item.category}</h4>
 
-                  <nav
-                    aria-label='Footer Services Nav'
-                    className='flex flex-col mt-6 space-y-1'
-                  >
-                    {item.links.map((link, index) => (
-                      <Link
-                        key={"link-item-" + link.id}
-                        className='text-white transition hover:text-white/75'
-                        href={link.url}
-                      >
-                        {link.name}
-                      </Link>
-                    ))}
-                  </nav>
-                </div>
-              </>
+                <nav
+                  aria-label='Footer Services Nav'
+                  className='flex flex-col mt-6 space-y-1'
+                >
+                  {item.links.map((link, index) => (
+                    <Link
+                      key={"link-item-" + link.id}
+                      className='text-white transition hover:text-white/75'
+                      href={link.url}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
             ))}
           </div>
         </div>

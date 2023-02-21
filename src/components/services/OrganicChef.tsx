@@ -60,52 +60,48 @@ const OrganicChef = () => {
         </div>
         <div className='grid grid-cols-1 gap-4 mt-6 lg:grid-cols-3'>
           {organicChefCardsData.map((item, idx) => (
-            <>
-              <a
-                key={"card-" + item.id + idx}
-                href='#'
-                className='block p-6 shadow-lg rounded-2xl'
-              >
+            <div
+              key={item.id}
+              className='block overflow-hidden shadow-lg rounded-2xl'
+            >
+              <Image
+                width={100}
+                height={100}
+                unoptimized
+                alt={item.name}
+                src={item.image}
+                className='object-cover w-full h-auto mt-4 overflow-hidden rounded-t-2xl aspect-square'
+              />
+
+              <div className='p-6 text-sm'>
                 <span className='px-2 py-1.5 text-sm font-semibold rounded-full bg-yellow-500/20 text-yellow-800/90'>
                   {item.name}
                 </span>
-
-                <Image
-                  width={100}
-                  height={100}
-                  unoptimized
-                  alt={item.name}
-                  src={item.image}
-                  className='object-cover w-full h-auto mt-4 rounded-2xl aspect-square'
-                />
-
-                <div className='mt-6 text-sm'>
-                  <ul className='grid grid-cols-1 gap-3'>
-                    {item.points.map((point, index) => (
-                      <li
-                        className='flex items-center justify-start gap-2'
-                        key={"card-point-" + index}
-                      >
-                        <span className='flex items-center justify-center w-5 h-5 font-semibold rounded-full bg-emerald-600/20'>
-                          <TbCheck className='text-emerald-900/75' />
-                        </span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className='flex items-center gap-8 mt-6'>
-                    <Link
-                      href={item.link}
-                      className='w-full px-6 py-2.5 font-semibold text-center text-white duration-150 rounded-md bg-emerald-800 hover:bg-emerald-700 inline-flex justify-center items-center gap-2'
+                <ul className='grid grid-cols-1 gap-3 mt-6'>
+                  {item.points.map((point, index) => (
+                    <li
+                      className='flex items-center justify-start gap-2'
+                      key={"card-point-" + index}
                     >
-                      {item.linkLabel}
-                      <TbArrowRight />
-                    </Link>
-                  </div>
+                      <span className='flex items-center justify-center w-5 h-5 font-semibold rounded-full bg-emerald-600/20'>
+                        <TbCheck className='text-emerald-900/75' />
+                      </span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className='flex items-center gap-8 mt-6'>
+                  <Link
+                    href={item.link}
+                    className='inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold text-center text-white duration-150 rounded-md bg-emerald-800 hover:bg-emerald-700'
+                  >
+                    {item.linkLabel}
+                    <TbArrowRight />
+                  </Link>
                 </div>
-              </a>
-            </>
+              </div>
+            </div>
           ))}
         </div>
       </div>

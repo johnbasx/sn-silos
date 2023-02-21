@@ -6,7 +6,7 @@ const nextConfig = {
   i18n,
   distDir: "build",
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "cropx.com"],
   },
 };
 
