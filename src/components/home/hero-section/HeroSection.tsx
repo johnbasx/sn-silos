@@ -43,75 +43,75 @@ export const headerCardsData = [
 
 const HeroSection = () => {
   return (
-      <main>
-        <div className='flex items-center justify-center bg-fixed bg-center bg-cover h-2/3 bg-custom-img'>
-          <div className='relative px-6 lg:px-8'>
-            <div className='max-w-2xl pt-24 pb-32 mx-auto sm:py-48 lg:py-46'>
-              <div className='flex justify-center mb-8'>
-                <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-600 rounded-full bg-gray-50 ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
-                  Announcing our next round of ideas.
-                  <a href='#' className='ml-1 font-semibold text-emerald-600'>
-                    Read more <span aria-hidden='true'>&rarr;</span>
-                  </a>
-                </div>
-              </div>
-              <div className='text-center'>
-                <h1 className='text-4xl font-bold tracking-tight drop-shadow text-gray-50 sm:text-6xl'>
-                  SN Silos to enrich your business
-                </h1>
-                <p className='mt-6 text-lg leading-8 text-gray-200 drop-shadow'>
-                  Let&apos;s rebuild with the best technologies and our people
-                </p>
-                <div className='flex items-center justify-center mt-10 gap-x-6'>
-                  <a
-                    href='#'
-                    className='px-4 py-2 text-base font-semibold leading-7 text-white duration-150 rounded-md shadow-sm bg-emerald-600 hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'
-                  >
-                    Join us now
-                  </a>
-                  <a
-                    href='#'
-                    className='text-base font-semibold leading-7 text-gray-100 drop-shadow'
-                  >
-                    Learn more <span aria-hidden='true'>→</span>
-                  </a>
-                </div>
+    <main>
+      <div className='flex items-center justify-center bg-fixed bg-center bg-cover h-2/3 bg-custom-img'>
+        <div className='relative px-6 lg:px-8'>
+          <div className='max-w-2xl pt-24 pb-32 mx-auto sm:py-48 lg:py-46'>
+            <div className='flex justify-center mb-8'>
+              <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-600 rounded-full bg-gray-50 ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
+                Announcing our next round of ideas.
+                <a href='#!' className='ml-1 font-semibold text-emerald-600'>
+                  Read more <span aria-hidden='true'>&rarr;</span>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div className='relative'>
-          <div className='px-4 mx-auto -mt-20 rounded-lg max-w-7xl'>
-            <div className='grid items-center grid-cols-3 text-gray-900 bg-white rounded-lg shadow-lg sm:grid-cols-4'>
-              {headerCardsData.map((item, index) => (
-                <Link
+            <div className='text-center'>
+              <h1 className='text-4xl font-bold tracking-tight drop-shadow text-gray-50 sm:text-6xl'>
+                SN Silos to enrich your business
+              </h1>
+              <p className='mt-6 text-lg leading-8 text-gray-200 drop-shadow'>
+                Let&apos;s rebuild with the best technologies and our people
+              </p>
+              <div className='flex items-center justify-center mt-10 gap-x-6'>
+                <a
                   href='#!'
-                  key={"Header Card" + item.id + index}
-                  className={clsx(
-                    index >= 3
-                      ? "hidden sm:flex sm:flex-col items-center justify-center text-center"
-                      : "flex flex-col items-center justify-center text-center  border-r border-gray-200",
-                    index == 2 && "border-transparent sm:border-gray-200",
-                    "hover:scale-110 hover:border-transparent p-2 hover:bg-emerald-500 duration-150 hover:rounded-xl hover:text-white group hover:shadow-2xl h-44"
-                  )}
+                  className='px-4 py-2 text-base font-semibold leading-7 text-white duration-150 rounded-md shadow-sm bg-emerald-600 hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'
                 >
-                  <Image
-                    src={item.image}
-                    alt='SN Silos'
-                    width={100}
-                    height={100}
-                    unoptimized
-                    className='object-contain w-12 h-12 group-hover:saturate-0 group-hover:brightness-200 drop-shadow lg:w-auto lg:h-14'
-                  />
-                  <h3 className='mt-2 text-lg font-semibold'>{item.name}</h3>
-                  <p className='text-xs'>{item.description}</p>
-                </Link>
-              ))}
+                  Join us now
+                </a>
+                <a
+                  href='#!'
+                  className='text-base font-semibold leading-7 text-gray-100 drop-shadow'
+                >
+                  Learn more <span aria-hidden='true'>→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className='relative'>
+        <div className='px-4 mx-auto -mt-20 rounded-lg max-w-7xl'>
+          <div className='grid items-center grid-cols-3 text-gray-900 bg-white rounded-lg shadow-lg sm:grid-cols-4'>
+            {headerCardsData.map((item, index) => (
+              <Link
+                href='#!'
+                key={"Header Card" + item.id + index}
+                className={clsx(
+                  index >= 3
+                    ? "hidden sm:flex sm:flex-col items-center justify-center text-center"
+                    : "flex flex-col items-center justify-center text-center  border-r border-gray-200",
+                  index == 2 && "border-transparent sm:border-gray-200",
+                  "hover:scale-110 hover:border-transparent p-2 hover:bg-emerald-500 duration-150 hover:rounded-xl hover:text-white group hover:shadow-2xl h-44"
+                )}
+              >
+                <Image
+                  src={item.image}
+                  alt='SN Silos'
+                  width={100}
+                  height={100}
+                  unoptimized
+                  className='object-contain w-12 h-12 group-hover:saturate-0 group-hover:brightness-200 drop-shadow lg:w-auto lg:h-14'
+                />
+                <h3 className='mt-2 text-lg font-semibold'>{item.name}</h3>
+                <p className='text-xs'>{item.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
-        {/* <div className='relative px-6 lg:px-8'>
+      {/* <div className='relative px-6 lg:px-8'>
           <div className='max-w-2xl py-32 mx-auto sm:py-48 lg:py-56'>
             <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
               <div className='relative px-3 py-1 text-sm leading-6 text-gray-600 rounded-full ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
@@ -173,8 +173,7 @@ const HeroSection = () => {
             </svg>
           </div>
         </div> */}
-      </main>
-
+    </main>
   );
 };
 export default HeroSection;

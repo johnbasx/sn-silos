@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav className='sticky top-0 z-50 px-6 py-3 bg-white drop-shadow shadow-black'>
         <div className='flex items-center justify-between mx-auto max-w-7xl'>
           <div className='flex lg:flex-1'>
-            <a href='#' className='-m-1.5 p-1.5'>
+            <a href='#!' className='-m-1.5 p-1.5'>
               <span className='sr-only'>SN Silos</span>
               <Image
                 className='object-contain w-10 h-10 drop-shadow'
@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
           <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
             <a
-              href='#'
+              href='#!'
               className='inline-flex items-center gap-2 font-semibold leading-6 text-gray-900'
             >
               <HiPhone />
@@ -68,7 +68,7 @@ const Navbar = () => {
           >
             <Dialog.Panel className='fixed inset-0 z-10 px-6 py-3 overflow-y-auto bg-emerald-900 lg:hidden'>
               <div className='flex items-center justify-between'>
-                <a href='#' className='-m-1.5 p-1.5'>
+                <a href='#!' className='-m-1.5 p-1.5'>
                   <span className='sr-only'>SN Silos</span>
                   <Image
                     className='object-contain w-10 h-10 brightness-125 drop-shadow'
@@ -103,7 +103,7 @@ const Navbar = () => {
                   </div>
                   <div className='py-6'>
                     <a
-                      href='#'
+                      href='#!'
                       className='-mx-3 rounded-lg py-2.5 px-3 text-base font-semibold leading-6 inline-flex items-center gap-2 text-emerald-50 hover:bg-emerald-400/10'
                     >
                       <HiPhone /> +91-9977162819

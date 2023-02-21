@@ -62,7 +62,7 @@ const WhyUs = () => {
 
         <div className='mt-12 text-center'>
           <a
-            href='#'
+            href='#!'
             className='inline-flex items-center gap-1 px-8 py-3 mt-8 text-black bg-white border rounded-md hover:bg-gray-100 focus:outline-none focus:ring active:text-emerald-700'
           >
             <span className='text-sm font-medium'> Get Started </span>

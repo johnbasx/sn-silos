@@ -5,11 +5,7 @@ import TestimonialCard from "./TestimonialCard";
 import Image from "next/image";
 
 const TestimonialSection = () => {
-  return (
-    <section>
-      <h2>Teihasiohdhads</h2>
-    </section>
-  );
+  return <></>;
 };
 
 export default TestimonialSection;

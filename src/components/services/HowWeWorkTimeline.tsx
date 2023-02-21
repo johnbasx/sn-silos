@@ -19,7 +19,7 @@ const HowWeWorkTimeline = () => {
               thousands of farmers in more than 80 cities in India.
             </p>
             <a
-              href='#'
+              href='#!'
               className='px-6 py-2 mr-auto font-semibold text-white border rounded-md shadow bg-emerald-800 hover:bg-emerald-900 hover:shadow-lg'
             >
               Explore Now

@@ -44,7 +44,7 @@ const HighQualityLand = () => {
 
               <div className='mt-8 md:mt-8'>
                 <a
-                  href='#'
+                  href='#!'
                   className='inline-block px-8 py-2.5 text-sm font-semibold transition bg-white border border-white rounded text-emerald-800 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400'
                 >
                   Get Started Today

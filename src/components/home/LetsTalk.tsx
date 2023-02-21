@@ -20,14 +20,14 @@ const LetsTalk = () => {
 
           <div className='flex items-center justify-center gap-6 mt-10 sm:mt-8'>
             <a
-              href='#'
+              href='#!'
               className='inline-flex items-center gap-1 px-4 py-2 text-white transition rounded-full shadow-lg bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring'
             >
               <span className='text-sm font-medium'> Retailers </span>
               <TbArrowRight />
             </a>
             <a
-              href='#'
+              href='#!'
               className='inline-flex items-center gap-1 px-4 py-2 text-white transition rounded-full shadow-lg bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring'
             >
               <span className='text-sm font-medium'>Commercial Growers</span>

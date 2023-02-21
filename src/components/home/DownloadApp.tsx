@@ -52,7 +52,7 @@ const DownloadApp = () => {
           <div>
             <div className='mt-10'>
               <div>
-                <a href='#' className='inline-flex space-x-4'>
+                <a href='#!' className='inline-flex space-x-4'>
                   <span className='rounded bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-600 tracking-wide uppercase'>
                     Download Now!
                   </span>
