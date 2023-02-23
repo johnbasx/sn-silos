@@ -1,0 +1,33 @@
+import React from "react";
+import { TbExternalLink } from "react-icons/tb";
+import { ButtonLink } from "../Button";
+
+const LookingForCareer = () => {
+  return (
+    <section>
+      <div className='bg-emerald-900'>
+        <div className='max-w-md px-4 py-10 mx-auto space-y-6 text-center sm:max-w-2xl sm:py-24 sm:px-6 lg:px-8 lg:py-24'>
+          <h2 className='block text-4xl font-extrabold text-white sm:text-5xl'>
+            Looking for a new career?
+          </h2>
+          <span className='block text-4xl text-emerald-50'>We’re hiring.</span>
+
+          <ButtonLink
+            href='#!'
+            variant='white'
+            size='large'
+            className='inline-flex items-center justify-center space-x-2'
+          >
+            <span>See open positions</span>
+            <TbExternalLink
+              className='w-5 h-5 ml-3 text-gray-400'
+              aria-hidden='true'
+            />
+          </ButtonLink>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default LookingForCareer;
