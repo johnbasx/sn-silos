@@ -76,7 +76,7 @@ export const moreBlogsData = [
 const MoreBlogs = () => {
   return (
     <section className='bg-white'>
-      <div className='container px-6 py-10 pb-16 mx-auto md:pb-32'>
+      <div className='px-6 py-10 pb-16 mx-auto max-w-7xl md:pb-32'>
         <h1 className='text-4xl font-bold text-gray-800 capitalize lg:text-5xl'>
           Precise agriculture includes
         </h1>

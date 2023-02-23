@@ -28,7 +28,7 @@ const Gallery = () => {
     <>
       <QuickView open={open} setOpen={setOpen} imageView={imageView} />
       <div className='py-12 bg-white lg:pb-16 lg:pt-24'>
-        <div className='px-6 py-8 md:max-w-7xl md:mx-auto lg:px-8'>
+        <div className='px-6 py-8 max-w-7xl md:mx-auto lg:px-0'>
           <Tab.Group>
             <div>
               <div className='flex flex-col w-full'>
@@ -41,7 +41,7 @@ const Gallery = () => {
                   Satellite imaging and Machine Learning.
                 </p>
               </div>
-              <Tab.List className='relative flex self-center w-full gap-4 mt-4 rounded-lg md:px-40'>
+              <Tab.List className='relative flex self-center w-full gap-4 mt-4 rounded-lg'>
                 {tabItems.map((tab, i) => (
                   <Tab
                     key={tab.id}
@@ -62,7 +62,7 @@ const Gallery = () => {
             </div>
             <Tab.Panels>
               <Tab.Panel>
-                <div className='mt-8 sm:mt-16 lg:max-w-7xl lg:mx-auto md:mx-12 xl:max-w-none xl:mx-0'>
+                <div className='mt-8 sm:mt-16 lg:mx-auto'>
                   <Tabs tabs={photoTabs} type='photos' />
                   <div className='gap-6 mt-8 md:gap-6 columns-1 md:columns-3'>
                     {filterCategoryCtx.categorytoFilter === "All" ||

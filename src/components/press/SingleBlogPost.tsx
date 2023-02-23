@@ -69,11 +69,14 @@ export const blogData = [
 const SingleBlogPost = () => {
   return (
     <section className='bg-white'>
-      <div className='container px-6 py-6 mx-auto'>
+      <div className='container px-6 py-6 mx-auto max-w-7xl'>
         <div className='py-4 mb-6'>
-          <h2 className='text-4xl font-bold lg:text-5xl'>Blog Posts</h2>
-          <p className='mt-3 text-lg text-gray-600'>
+          <h2 className='text-4xl font-bold lg:text-5xl'>
             Our Soil Sense kit contains
+          </h2>
+          <p className='mt-3 text-lg text-gray-600'>
+            Let&apos;s have a lokk at our various technologies to support
+            farmers in monitoring their yield and farms
           </p>
         </div>
         <div className='lg:flex lg:-mx-6'>
@@ -81,7 +84,7 @@ const SingleBlogPost = () => {
             <Image
               height={100}
               width={100}
-              className='object-cover object-center w-full h-80 xl:h-[28rem] rounded-2xl border'
+              className='object-contain overflow-hidden object-center w-full h-80 xl:h-[28rem] rounded-2xl border'
               src={blogData[0].image}
               alt='Blog Image'
             />
