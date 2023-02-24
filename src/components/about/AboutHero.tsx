@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const links = [
-  { name: "Career roles", href: "#!" },
-  { name: "Internship programs", href: "#!" },
-  { name: "Our vision", href: "#!" },
-  { name: "Meet our leadership", href: "#!" },
+  { name: "Career roles", href: "/career" },
+  { name: "Internship programs", href: "/career" },
+  { name: "Our vision", href: "/press" },
+  { name: "Meet our leadership", href: "/press" },
 ];
 export const stats = [
   { name: "Clients worldwide", value: "89,897" },
@@ -42,9 +43,9 @@ const AboutHero = () => {
         <div className='max-w-2xl mx-auto mt-10 lg:mx-0 lg:max-w-none'>
           <div className='grid grid-cols-1 text-base font-semibold leading-7 text-white gap-y-6 gap-x-8 sm:grid-cols-2 md:flex lg:gap-x-10'>
             {links.map((link) => (
-              <a key={link.name} href={link.href}>
+              <Link key={link.name} href={link.href}>
                 {link.name} <span aria-hidden='true'>&rarr;</span>
-              </a>
+              </Link>
             ))}
           </div>
           <dl className='grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4'>

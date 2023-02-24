@@ -5,7 +5,6 @@ import {
   FaFacebook,
   FaGithub,
   FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
@@ -23,12 +22,12 @@ export const footerLinks = [
       {
         id: nanoid(),
         name: "Our Farmers",
-        url: "/our-farmers",
+        url: "/press",
       },
       {
         id: nanoid(),
         name: "New Projects",
-        url: "/new-projects",
+        url: "/career",
       },
     ],
   },
@@ -39,7 +38,7 @@ export const footerLinks = [
       {
         id: nanoid(),
         name: "Our platform",
-        url: "#!",
+        url: "/services",
       },
       {
         id: nanoid(),
@@ -49,7 +48,7 @@ export const footerLinks = [
       {
         id: nanoid(),
         name: "App downloads",
-        url: "#!",
+        url: "/contact",
       },
     ],
   },
@@ -60,7 +59,7 @@ export const footerLinks = [
       {
         id: nanoid(),
         name: "Careers",
-        url: "/careers",
+        url: "/career",
       },
       {
         id: nanoid(),
@@ -70,7 +69,7 @@ export const footerLinks = [
       {
         id: nanoid(),
         name: "Contact Us",
-        url: "/contact-us",
+        url: "/contact",
       },
     ],
   },
@@ -116,60 +115,60 @@ const Footer = () => {
             </p>
 
             <div className='flex justify-center gap-4 mt-6 lg:justify-start'>
-              <a
+              <Link
                 className='text-white transition hover:text-white/75'
-                href=''
+                href='#!'
                 target='_blank'
                 rel='noreferrer'
               >
                 <span className='sr-only'> Facebook </span>
 
                 <FaFacebook className='w-6 h-6' />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className='text-white transition hover:text-white/75'
-                href=''
+                href='#!'
                 target='_blank'
                 rel='noreferrer'
               >
                 <span className='sr-only'> Instagram </span>
 
                 <FaInstagram className='w-6 h-6' />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className='text-white transition hover:text-white/75'
-                href=''
+                href='#!'
                 target='_blank'
                 rel='noreferrer'
               >
                 <span className='sr-only'> Twitter </span>
 
                 <FaTwitter className='w-6 h-6' />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className='text-white transition hover:text-white/75'
-                href=''
+                href='#!'
                 target='_blank'
                 rel='noreferrer'
               >
                 <span className='sr-only'> GitHub </span>
 
                 <FaGithub className='w-6 h-6' />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className='text-white transition hover:text-white/75'
-                href=''
+                href='#!'
                 target='_blank'
                 rel='noreferrer'
               >
                 <span className='sr-only'> LinkedIn </span>
 
                 <FaLinkedinIn className='w-6 h-6' />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -203,7 +202,7 @@ const Footer = () => {
             <br />
             Powered by{" "}
             <a
-              href=''
+              href='https://fox-beta.com'
               className='font-semibold text-white underline transition hover:text-white/75'
             >
               Foxbeta

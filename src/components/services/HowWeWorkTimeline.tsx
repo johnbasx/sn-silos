@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HowWeWorkTimeline = () => {
@@ -18,12 +19,12 @@ const HowWeWorkTimeline = () => {
               the fertilizer, seed, feed and other agri-inputs needs of
               thousands of farmers in more than 80 cities in India.
             </p>
-            <a
-              href='#!'
+            <Link
+              href='/press'
               className='px-6 py-2 mr-auto font-semibold text-white border rounded-md shadow bg-emerald-800 hover:bg-emerald-900 hover:shadow-lg'
             >
               Explore Now
-            </a>
+            </Link>
           </div>
           <div className='sticky ml-0 md:ml-8 lg:w-2/3'>
             <div className='container w-full h-full mx-auto'>

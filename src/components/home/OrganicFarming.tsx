@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { TbArrowRight, TbCheck } from "react-icons/tb";
@@ -61,13 +62,13 @@ const OrganicFarming = () => {
               </div>
 
               <div className='mt-4 md:mt-8'>
-                <a
-                  href='#!'
+                <Link
+                  href='/about'
                   className='inline-flex items-center gap-2 px-8 py-3 text-sm font-medium transition bg-white border border-white rounded-full text-emerald-700 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-emarald-400'
                 >
                   Learn more
                   <TbArrowRight />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

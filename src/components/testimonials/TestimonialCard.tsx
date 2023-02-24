@@ -6,28 +6,54 @@ import { HiShieldCheck } from "react-icons/hi";
 
 const TestimonialCard = ({ ...review }: ReviewsDataProps) => {
   return (
-    <div>
-      <blockquote className='p-8 bg-gray-100 rounded-xl'>
-        <div className='flex items-center gap-4'>
-          <Image
-            alt='Man'
-            src={review.image}
-            width={100}
-            height={100}
-            className='object-cover w-16 h-16 rounded-full'
-          />
-
-          <div>
-            <span className='mt-1 text-lg font-medium text-gray-700'>
-              {review.author}
-            </span>
+    <div key={review.id}>
+      <div className='px-6 py-6 overflow-hidden bg-white border border-gray-200 shadow-sm rounded-2xl'>
+        <div className='flex space-x-0.5'>
+          {[...new Array(5)].map((rating, index) =>
+            index < review.rating ? (
+              <AiFillStar
+                key={"rating-star-" + index}
+                className='w-5 h-5 text-emerald-500'
+              />
+            ) : (
+              <AiFillStar
+                key={"rating-star-gray-" + index}
+                className='w-5 h-5 text-gray-300'
+              />
+            )
+          )}
+        </div>
+        <p className='mt-2 text-sm font-medium leading-5 text-gray-500'>
+          {review.date}
+        </p>
+        <div className='inline-flex items-center mt-6 space-x-1'>
+          <HiShieldCheck className='text-gray-500' />
+          <p className='text-sm font-medium leading-5 text-gray-500'>
+            Verified customer
+          </p>
+        </div>
+        <div className='space-y-1'>
+          <h3 className='font-semibold text-gray-800'>{review.title}</h3>
+          <p className='text-sm font-medium leading-5 text-gray-600 line-clamp-2'>
+            {review.body}
+          </p>
+        </div>
+        <div className='flex items-center mt-6 space-x-2'>
+          <div className='flex flex-shrink-0 border border-gray-200 rounded-full '>
+            <Image
+              className='object-cover w-10 h-10 rounded-full'
+              src={review.image}
+              height={100}
+              width={100}
+              alt='profile author'
+            />
+          </div>
+          <span className='font-medium'>{review.author}</span>
+          <div className=''>
+            <BsPatchCheckFill className='w-5 h-5 text-primary-400' />
           </div>
         </div>
-
-        <span className='mt-4 text-gray-500 line-clamp-2 sm:line-clamp-none'>
-          {review.body}
-        </span>
-      </blockquote>
+      </div>
     </div>
   );
 };

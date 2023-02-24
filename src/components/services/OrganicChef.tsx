@@ -15,7 +15,7 @@ export const organicChefCardsData = [
       "Timely Elecronic Payments",
       "Market Guidance",
     ],
-    link: "#!",
+    link: "/contact",
     linkLabel: "Sell to us",
   },
   {
@@ -28,7 +28,7 @@ export const organicChefCardsData = [
       "Fair and transparent pricing",
       "Convenient for business owners",
     ],
-    link: "#!",
+    link: "/contact",
     linkLabel: "Buy from us",
   },
   {
@@ -41,7 +41,7 @@ export const organicChefCardsData = [
       "At farm gate prices",
       "Traceable to source",
     ],
-    link: "#!",
+    link: "/contact",
     linkLabel: "go to organicchef.com",
   },
 ];

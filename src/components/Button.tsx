@@ -4,6 +4,7 @@ import {
   type ReactNode,
 } from "react";
 import clsx from "clsx";
+import Link, { LinkProps } from "next/link";
 
 type buttonVariant =
   | "regular"
@@ -21,9 +22,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 
-interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface ButtonLinkProps extends LinkProps {
   size?: buttonSize;
   variant?: buttonVariant;
+  className?: string;
   children: ReactNode;
 }
 
@@ -44,19 +46,19 @@ export const Button = ({
         size === "regular" && "px-4 py-2 text-sm",
         size === "small" && "px-2 py-2",
         variant === "regular" &&
-          "bg-primary-500 text-white hover:bg-primary-600 disabled:hover:bg-primary-200",
+          "bg-emerald-500 text-white hover:bg-emerald-600 disabled:hover:bg-emerald-200",
         variant === "outline" &&
-          "border border-primary-500 text-primary-50 hover:border-primary-600 hover:bg-primary-600 disabled:border-primary-100 disabled:bg-transparent",
+          "border border-emerald-500 text-emerald-50 hover:border-emerald-600 hover:bg-emerald-600 disabled:border-emerald-100 disabled:bg-transparent",
         variant === "outline-white" &&
-          "border border-primary-50 text-primary-50 hover:border-primary-50 hover:bg-primary-50 hover:text-primary-900 disabled:border-primary-100 disabled:bg-transparent",
+          "border border-emerald-50 text-emerald-50 hover:border-emerald-50 hover:bg-emerald-50 hover:text-emerald-900 disabled:border-emerald-100 disabled:bg-transparent",
         variant === "white" &&
-          "text-primary-900 hover:bg-gray-100 bg-white disabled:hover:bg-gray-50",
+          "text-emerald-900 hover:bg-gray-100 bg-white disabled:hover:bg-gray-50",
         variant === "black" &&
           "text-white hover:bg-gray-900 bg-black disabled:hover:bg-gray-200",
         variant === "ghost" &&
-          "text-primary-50 hover:bg-primary-600 disabled:hover:bg-transparent",
+          "text-emerald-50 hover:bg-emerald-600 disabled:hover:bg-transparent",
         variant === "link" &&
-          "text-primary-50 hover:underline disabled:no-underline"
+          "text-emerald-50 hover:underline disabled:no-underline"
       )}
       {...props}
     >
@@ -74,7 +76,7 @@ export const ButtonLink = ({
   ...props
 }: ButtonLinkProps) => {
   return (
-    <a
+    <Link
       href={href}
       className={clsx(
         "rounded-md text-sm font-medium transition-all duration-150",
@@ -84,23 +86,23 @@ export const ButtonLink = ({
         size === "regular" && "px-4 py-2 text-sm",
         size === "small" && "px-3 py-1.5 text-xs",
         variant === "regular" &&
-          "bg-primary-500 text-white hover:bg-primary-400 disabled:hover:bg-primary-50",
+          "bg-emerald-700 text-white hover:bg-emerald-600 disabled:hover:bg-emerald-50",
         variant === "outline" &&
-          "border border-primary-500 text-primary-500 hover:border-primary-500 hover:bg-primary-400 hover:text-primary-50 disabled:border-primary-500 disabled:bg-transparent",
+          "border border-emerald-500 text-emerald-500 hover:border-emerald-500 hover:bg-emerald-400 hover:text-emerald-50 disabled:border-emerald-500 disabled:bg-transparent",
         variant === "outline-white" &&
-          "border border-primary-50 text-primary-50 hover:border-primary-50 hover:bg-primary-50 hover:text-primary-900 disabled:border-primary-100 disabled:bg-transparent",
+          "border border-emerald-50 text-emerald-50 hover:border-emerald-50 hover:bg-emerald-50 hover:text-emerald-900 disabled:border-emerald-100 disabled:bg-transparent",
         variant === "white" &&
-          "text-primary-900 hover:bg-gray-100 bg-white disabled:hover:bg-gray-50",
+          "text-emerald-900 hover:bg-gray-100 bg-white disabled:hover:bg-gray-50",
         variant === "black" &&
           "text-white hover:bg-gray-900 bg-black disabled:hover:bg-gray-200",
         variant === "ghost" &&
-          "text-primary-500 hover:bg-primary-600 disabled:hover:bg-transparent",
+          "text-emerald-500 hover:bg-emerald-600 disabled:hover:bg-transparent",
         variant === "link" &&
-          "text-primary-500 hover:underline disabled:no-underline"
+          "text-emerald-500 hover:underline disabled:no-underline"
       )}
       {...props}
     >
       {children}
-    </a>
+    </Link>
   );
 };

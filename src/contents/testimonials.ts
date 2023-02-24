@@ -33,8 +33,8 @@ export const reviews = [
   },
   {
     id: createID(),
-    title: "Thank you 👍🏻 Soilsense",
-    body: "Soil sense makes it so easy to manage my workflows in agriculture coming from an engineering background I had trouble with looking out my farms and the market simultaneously which soil sense helped me a lot.",
+    title: "Thank you 👍🏻 SN Silos",
+    body: "SN Silos makes it so easy to manage my workflows in agriculture coming from an engineering background I had trouble with looking out my farms and the market simultaneously which soil sense helped me a lot.",
     author: "Pradeep Singh",
     rating: 5,
     date: "6/02/2012",
@@ -44,7 +44,7 @@ export const reviews = [
   {
     id: createID(),
     title: "🔥🔥 Wow!",
-    body: "Thank you soilsense and their amazing technology.",
+    body: "Thank you SN Silos and their amazing technology for making my life easier.",
     author: "Varnie Kapoor",
     rating: 4,
     date: "6/02/2012",
@@ -65,7 +65,7 @@ export const reviews = [
   {
     id: createID(),
     title: "😻Too good to be true.😃🥺😃🔥",
-    body: "Soilsense helped a lot in the growth of my business. Thank you soooooo much!! 🖤🖤🖤🖤",
+    body: "SN Silos helped a lot in the growth of my business. Thank you soooooo much!! 🖤🖤🖤🖤",
     author: "Taniya Sharma",
     rating: 2,
     date: "6/02/2012",
@@ -75,7 +75,7 @@ export const reviews = [
   {
     id: createID(),
     title: "It’s like a superpower🤘🏻",
-    body: "Love how we can manage everything from the app and their amazing service. Hat's off team Soil sense",
+    body: "Love how we can manage everything from the app and their amazing service. Hat's off team SN Silos",
     author: "Vikram Bhatt",
     rating: 4,
     date: "6/02/2012",
@@ -84,8 +84,8 @@ export const reviews = [
   },
   {
     id: createID(),
-    title: "👍🏻 Amazing Soilsense",
-    body: "Soil sense makes it so easy to manage my workflows in agriculture coming from an engineering background I had trouble with looking out my farms and the market simultaneously which soil sense helped me a lot.",
+    title: "👍🏻 Amazing SN Silos",
+    body: "SN Silos makes it so easy to manage my workflows in agriculture coming from an engineering background I had trouble with looking out my farms and the market simultaneously which soil sense helped me a lot.",
     author: "Shivani Sinha",
     rating: 5,
     date: "6/02/2012",

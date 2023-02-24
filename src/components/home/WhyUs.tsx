@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import { RiServiceLine, RiProjector2Line } from "react-icons/ri";
 import { CgPerformance } from "react-icons/cg";
 import { TbArrowRight } from "react-icons/tb";
+import Link from "next/link";
 
 export const whyusData = [
   {
@@ -61,14 +62,14 @@ const WhyUs = () => {
         </div>
 
         <div className='mt-12 text-center'>
-          <a
-            href='#!'
+          <Link
+            href='/about'
             className='inline-flex items-center gap-1 px-8 py-3 mt-8 text-black bg-white border rounded-md hover:bg-gray-100 focus:outline-none focus:ring active:text-emerald-700'
           >
             <span className='text-sm font-medium'> Get Started </span>
 
             <TbArrowRight />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export const servicesData = [
   {
     id: nanoid(),
     name: "Agriculture Products",
-    link: "#!",
+    link: "/press",
     about:
       "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.",
     image:
@@ -16,7 +16,7 @@ export const servicesData = [
   {
     id: nanoid(),
     name: "Fresh Vegetables",
-    link: "#!",
+    link: "/press",
     about:
       "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.",
     image:
@@ -25,7 +25,7 @@ export const servicesData = [
   {
     id: nanoid(),
     name: "Organic Items",
-    link: "#!",
+    link: "/press",
     about:
       "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.",
     image:
@@ -34,7 +34,7 @@ export const servicesData = [
   {
     id: nanoid(),
     name: "Dairy Products",
-    link: "#!",
+    link: "/press",
     about:
       "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.",
     image:

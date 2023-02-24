@@ -59,9 +59,12 @@ const HeroSection = () => {
             <div className='flex justify-center mb-8'>
               <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-100 rounded-full bg-gray-800/50 backdrop-blur-md ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
                 The future of technology.
-                <a href='#!' className='ml-1 font-semibold text-emerald-400'>
+                <Link
+                  href='/about'
+                  className='ml-1 font-semibold text-emerald-400'
+                >
                   Read more <span aria-hidden='true'>&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className='text-center'>

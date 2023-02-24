@@ -8,7 +8,7 @@ const EmptyReviewCard = () => {
         <h3 className='text-gray-500'>
           Want to view more testimonials & reviews of our awesome customers?
         </h3>
-        {/* <ButtonLink>View more</ButtonLink> */}
+        <ButtonLink href="/about">View more</ButtonLink>
       </div>
     </div>
   );
