@@ -44,13 +44,22 @@ export const headerCardsData = [
 const HeroSection = () => {
   return (
     <main>
-      <div className='flex items-center justify-center bg-fixed bg-center bg-cover h-2/3 bg-custom-img'>
+      <div className='relative flex items-center justify-center overflow-hidden isolate h-2/3'>
+        <Image
+          src='https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTczfHxkcm9uZSUyMGZhcm1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=80&blend=064e3b&sat=0&exp=5&blend-mode=multiply'
+          alt='ABout Us backdrop image'
+          height={100}
+          width={100}
+          unoptimized
+          priority
+          className='absolute inset-0 object-cover object-right w-full h-full -z-10 md:object-center'
+        />
         <div className='relative px-6 lg:px-8'>
           <div className='max-w-2xl pt-24 pb-32 mx-auto sm:py-48 lg:py-46'>
             <div className='flex justify-center mb-8'>
-              <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-600 rounded-full bg-gray-50 ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
-                Announcing our next round of ideas.
-                <a href='#!' className='ml-1 font-semibold text-emerald-600'>
+              <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-100 rounded-full bg-gray-800/50 backdrop-blur-md ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
+                The future of technology.
+                <a href='#!' className='ml-1 font-semibold text-emerald-400'>
                   Read more <span aria-hidden='true'>&rarr;</span>
                 </a>
               </div>
@@ -63,18 +72,18 @@ const HeroSection = () => {
                 Let&apos;s rebuild with the best technologies and our people
               </p>
               <div className='flex items-center justify-center mt-10 gap-x-6'>
-                <a
-                  href='#!'
+                <Link
+                  href='/about'
                   className='px-4 py-2 text-base font-semibold leading-7 text-white duration-150 rounded-md shadow-sm bg-emerald-600 hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'
                 >
                   Join us now
-                </a>
-                <a
-                  href='#!'
+                </Link>
+                <Link
+                  href='/press'
                   className='text-base font-semibold leading-7 text-gray-100 drop-shadow'
                 >
                   Learn more <span aria-hidden='true'>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

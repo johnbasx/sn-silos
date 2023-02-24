@@ -1,6 +1,7 @@
 import { navigation } from "@/contents/navigation";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { Fragment, useState } from "react";
 import { HiBars3, HiPhone, HiXMark } from "react-icons/hi2";
 
@@ -15,8 +16,8 @@ const Navbar = () => {
             <a href='#!' className='-m-1.5 p-1.5'>
               <span className='sr-only'>SN Silos</span>
               <Image
-                className='object-contain w-10 h-10 drop-shadow'
-                src='/images/logo/SN-silos-logo.png'
+                className='object-contain w-auto h-10 drop-shadow'
+                src='/images/logo/snsilos-logoside.png'
                 alt='SN Silos logo'
                 width={100}
                 height={100}
@@ -35,13 +36,13 @@ const Navbar = () => {
           </div>
           <div className='hidden lg:flex lg:gap-x-12'>
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className='font-semibold leading-6 text-gray-900'
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
@@ -71,8 +72,8 @@ const Navbar = () => {
                 <a href='#!' className='-m-1.5 p-1.5'>
                   <span className='sr-only'>SN Silos</span>
                   <Image
-                    className='object-contain w-10 h-10 brightness-125 drop-shadow'
-                    src='/images/logo/SN-silos-logo.png'
+                    className='object-contain w-auto h-10 brightness-125 drop-shadow'
+                    src='/images/logo/snsilos-logoside.png'
                     alt='SN Silos logo'
                     priority
                     width={100}
@@ -92,13 +93,13 @@ const Navbar = () => {
                 <div className='-my-6 divide-y divide-gray-500/10'>
                   <div className='py-6 space-y-2'>
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10'
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <div className='py-6'>

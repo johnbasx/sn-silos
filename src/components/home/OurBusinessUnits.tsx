@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const OurBusinessUnits = () => {
@@ -81,12 +82,12 @@ const OurBusinessUnits = () => {
             </p>
 
             <div className='mt-4 md:mt-8'>
-              <a
-                href='#!'
+              <Link
+                href='/about'
                 className='inline-block px-12 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

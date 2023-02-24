@@ -14,11 +14,12 @@ import DownloadApp from "@/components/home/DownloadApp";
 import SomeDetail from "@/components/home/SomeDetail";
 import TestimonialSection from "@/components/testimonials/TestimonialSection";
 import Partners from "@/components/home/Partners";
+import Layout from "@/components/layout/Layout";
 const HomePage = () => {
   const { t } = useTranslation("common");
 
   return (
-    <>
+    <Layout title='Sn Silos | Land of Technology'>
       <HeroSection />
       <Deals />
       <OurBusinessUnits />
@@ -33,7 +34,7 @@ const HomePage = () => {
       <SomeDetail />
       <DownloadApp />
       <Partners />
-    </>
+    </Layout>
   );
 };
 

@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 import Layout from "@/components/layout/Layout";
 import { useEffect, useState } from "react";
+import NextNProgress from "nextjs-progressbar";
 
 function App({ Component, pageProps }: AppProps) {
   //at the first render initialRenderComplete is false
@@ -17,9 +18,12 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <NextNProgress
+        height={6}
+        color='#10b981'
+        options={{ showSpinner: false }}
+      />
+      <Component {...pageProps} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { TbArrowRight } from "react-icons/tb";
 
@@ -19,20 +20,20 @@ const LetsTalk = () => {
           </p>
 
           <div className='flex items-center justify-center gap-6 mt-10 sm:mt-8'>
-            <a
-              href='#!'
+            <Link
+              href='/contact'
               className='inline-flex items-center gap-1 px-4 py-2 text-white transition rounded-full shadow-lg bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring'
             >
               <span className='text-sm font-medium'> Retailers </span>
               <TbArrowRight />
-            </a>
-            <a
-              href='#!'
+            </Link>
+            <Link
+              href='/contact'
               className='inline-flex items-center gap-1 px-4 py-2 text-white transition rounded-full shadow-lg bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring'
             >
               <span className='text-sm font-medium'>Commercial Growers</span>
               <TbArrowRight />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

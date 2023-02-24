@@ -1,3 +1,4 @@
+import Layout from "@/components/layout/Layout";
 import Gallery from "@/components/press/Gallery";
 import MoreBlogs from "@/components/press/MoreBlogs";
 import SingleBlogPost from "@/components/press/SingleBlogPost";
@@ -7,11 +8,11 @@ import React from "react";
 
 const PressPage = () => {
   return (
-    <>
+    <Layout title='Press & Gallery - SN Silos | Land of Technlogy'>
       <Gallery />
       <SingleBlogPost />
       <MoreBlogs />
-    </>
+    </Layout>
   );
 };
 

@@ -1,4 +1,5 @@
 import OurSolutions from "@/components/home/OurSolutions";
+import Layout from "@/components/layout/Layout";
 import DiseaseControl from "@/components/services/DiseaseControl";
 import EndToEndSupply from "@/components/services/EndToEndSupply";
 import HighQualityLand from "@/components/services/HighQualityLand";
@@ -11,7 +12,7 @@ import React from "react";
 
 const ServicesPage = () => {
   return (
-    <>
+    <Layout title='Services - SN Silos | Land of Technlogy'>
       <LandDescription />
       <LandPlan />
       <HighQualityLand />
@@ -21,7 +22,7 @@ const ServicesPage = () => {
       <HowWeWorkTimeline />
       <ServicesWeAreOffering />
       <DiseaseControl />
-    </>
+    </Layout>
   );
 };
 
