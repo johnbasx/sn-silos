@@ -1,28 +1,32 @@
 import { navigation } from "@/contents/navigation";
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog, Transition, Menu } from "@headlessui/react";
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { Fragment, useState } from "react";
 import { HiBars3, HiPhone, HiXMark } from "react-icons/hi2";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   return (
     <div className='bg-white isolate'>
       <nav className='sticky top-0 z-50 px-6 py-3 bg-white drop-shadow shadow-black'>
         <div className='flex items-center justify-between mx-auto max-w-7xl'>
           <div className='flex lg:flex-1'>
-            <a href='#!' className='-m-1.5 p-1.5'>
+            <Link href='/' className='-m-1.5 p-1.5'>
               <span className='sr-only'>SN Silos</span>
               <Image
                 className='object-contain w-auto h-10 drop-shadow'
-                src='/images/logo/snsilos-logoside.png'
+                src='/images/logo/sn-silos-web-logo.png'
                 alt='SN Silos logo'
                 width={100}
                 height={100}
               />
-            </a>
+            </Link>
           </div>
           <div className='flex lg:hidden'>
             <button
@@ -39,20 +43,28 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className='font-semibold leading-6 text-gray-900'
+                className={clsx(
+                  "font-semibold leading-6 duration-150 rounded-md hover:text-emerald-700",
+                  currentRoute === item.href
+                    ? "text-emerald-600"
+                    : "text-gray-900"
+                )}
               >
                 {item.name}
               </Link>
             ))}
           </div>
-          <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
+          <div className='hidden gap-3 lg:flex lg:flex-1 lg:justify-end'>
             <a
               href='#!'
-              className='inline-flex items-center gap-2 font-semibold leading-6 text-gray-900'
+              className='inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold leading-6 text-gray-900 duration-150 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300'
             >
               <HiPhone />
               +91-9998567392
             </a>
+            <button className='px-4 py-2 text-sm font-semibold text-white duration-150 rounded-md bg-emerald-600 hover:bg-emerald-700'>
+              Download Now
+            </button>
           </div>
         </div>
       </nav>
@@ -69,7 +81,7 @@ const Navbar = () => {
           >
             <Dialog.Panel className='fixed inset-0 z-10 px-6 py-3 overflow-y-auto bg-emerald-900 lg:hidden'>
               <div className='flex items-center justify-between'>
-                <a href='#!' className='-m-1.5 p-1.5'>
+                <Link href='/' className='-m-1.5 p-1.5'>
                   <span className='sr-only'>SN Silos</span>
                   <Image
                     className='object-contain w-auto h-10 brightness-125 drop-shadow'
@@ -79,7 +91,7 @@ const Navbar = () => {
                     width={100}
                     height={100}
                   />
-                </a>
+                </Link>
                 <button
                   type='button'
                   className='-m-2.5 rounded-md p-2.5 text-emerald-50'
@@ -96,19 +108,23 @@ const Navbar = () => {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10'
+                        className={clsx('block px-3 py-2 -mx-3 text-base font-semibold duration-150 leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10', 
+                        currentRoute === item.href?'bg-emerald-400/10': "")}
                       >
                         {item.name}
                       </Link>
                     ))}
                   </div>
-                  <div className='py-6'>
+                  <div className='flex flex-col gap-8 py-6'>
                     <a
                       href='#!'
                       className='-mx-3 rounded-lg py-2.5 px-3 text-base font-semibold leading-6 inline-flex items-center gap-2 text-emerald-50 hover:bg-emerald-400/10'
                     >
                       <HiPhone /> +91-9977162819
                     </a>
+                    <button className='px-4 py-2.5 font-semibold duration-150 bg-white rounded-md text-emerald-900 hover:bg-gray-50'>
+                      Download Now
+                    </button>
                   </div>
                 </div>
               </div>

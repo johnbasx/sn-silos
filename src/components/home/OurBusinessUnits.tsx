@@ -4,12 +4,12 @@ import React from "react";
 
 const OurBusinessUnits = () => {
   return (
-    <section className='px-6 py-12 overflow-hidden bg-yellow-50 lg:px-0 lg:py-24'>
+    <section className='px-6 py-12 overflow-hidden bg-gradient-to-br to-transparent from-gray-50 lg:px-0 lg:py-24'>
       <div className='flex flex-col gap-2 text-left md:text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>Our Business Units</h2>
       </div>
-      <article className=' sm:grid sm:grid-cols-2 sm:items-center'>
-        <div className='py-8 md:p-12 lg:px-16 lg:py-24'>
+      <article className='mx-auto md:py-8 sm:grid sm:grid-cols-2 max-w-7xl sm:items-center'>
+        <div className='py-8 lg:py-24'>
           <div className='max-w-xl mx-auto text-left'>
             <Image
               className='w-auto h-16'
@@ -51,12 +51,12 @@ const OurBusinessUnits = () => {
           width={100}
           unoptimized
           height={100}
-          className='h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end rounded-xl sm:rounded-none sm:rounded-l-[30px] md:h-[calc(100%_-_4rem)] md:rounded-l-[60px]'
+          className='object-cover w-full h-full sm:self-end rounded-3xl'
         />
       </article>
 
-      <article className='sm:grid sm:grid-cols-2 sm:items-center'>
-        <div className='order-2 py-8 md:p-12 lg:px-16 lg:py-24'>
+      <article className='mx-auto mt-8 sm:grid sm:grid-cols-2 sm:items-center max-w-7xl'>
+        <div className='order-2 py-8 lg:py-24'>
           <div className='max-w-xl mx-auto text-left'>
             <Image
               className='w-auto h-16'
@@ -98,7 +98,7 @@ const OurBusinessUnits = () => {
           width={100}
           unoptimized
           height={100}
-          className='h-full w-full aspect-auto object-cover sm:self-end rounded-xl sm:rounded-none sm:rounded-r-[30px] md:rounded-r-[60px]'
+          className='object-cover w-full h-full aspect-auto sm:self-end rounded-3xl'
         />
       </article>
     </section>

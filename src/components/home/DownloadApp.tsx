@@ -100,7 +100,7 @@ const DownloadApp = () => {
         <div className='sm:mx-auto sm:max-w-3xl sm:px-6'>
           <div className='py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
             <div className='hidden sm:block'>
-              <div className='absolute inset-y-0 w-screen left-1/2 bg-yellow-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full' />
+              <div className='absolute inset-y-0 w-screen left-1/2 bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full' />
               <svg
                 className='absolute -mr-3 top-8 right-1/2 lg:m-0 lg:left-0'
                 width={404}

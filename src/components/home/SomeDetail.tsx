@@ -39,7 +39,7 @@ const SomeDetail = () => {
   return (
     <section className='relative bg-simon-img'>
       <div className='absolute inset-0 w-full h-full bg-black opacity-50'></div>
-      <div className='px-6 py-32 mx-auto lg:py-32 max-w-7xl lg:px-0'>
+      <div className='px-6 py-32 mx-auto min-h-[50vh] flex justify-center items-center lg:py-32 max-w-7xl lg:px-0'>
         <div className='grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4'>
           {someDetailsData.map((item, index) => (
             <div

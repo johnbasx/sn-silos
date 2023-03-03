@@ -55,7 +55,7 @@ const Offers = () => {
         {offersData.map((item, index) => (
           <div
             key={"Offer-card-" + item.id}
-            className='relative block p-6 overflow-hidden border shadow-xl lg:p-10 bg-gradient-to-tr from-black/75 to-transparent rounded-xl'
+            className='relative p-4 overflow-hidden border shadow-xl md:min-h-[20rem] lg:p-6 bg-gradient-to-tr from-black/90 to-transparent rounded-xl flex flex-col justify-end items-start'
           >
             <Image
               src={item.image}
@@ -64,7 +64,7 @@ const Offers = () => {
               alt='card-image'
               className='absolute inset-0 object-cover w-full h-full -z-10'
             />
-            <h3 className='text-xl font-bold text-white drop-shadow'>
+            <h3 className='text-xl font-bold text-white md:text-2xl drop-shadow'>
               {item.title}
             </h3>
 
@@ -74,7 +74,7 @@ const Offers = () => {
             <div className='mt-6 mb-3'>
               <Link
                 href={item.link}
-                className='px-4 py-2 text-sm font-semibold rounded-md bg-gray-50 text-emerald-900'
+                className='px-6 py-2.5 font-semibold rounded-md bg-gray-50 text-emerald-900 hover:bg-gray-100 duration-150'
               >
                 Check out
               </Link>

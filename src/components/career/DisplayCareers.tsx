@@ -123,17 +123,15 @@ const DisplayCareers = () => {
   //   }, [jobSelected]);
 
   return (
-    <div className='bg-yellow-50/50'>
+    <div className='bg-gray-50/50'>
       <article className='py-24 mx-auto max-w-7xl lg:py-32'>
         <section className='flex items-center flex-1 px-6'>
           <div className='flex flex-col w-full'>
-            <h1 className='text-6xl font-extrabold text-center drop-shadow lg:text-7xl 2xl:text-8xl'>
-              <span className='text-transparent bg-gradient-to-br bg-clip-text from-emerald-500 to-sky-800'>
-                Find your Career
-              </span>
+            <h1 className='text-4xl font-extrabold text-center drop-shadow lg:text-6xl 2xl:text-6xl'>
+              <span className='text-black'>Find your Career</span>
             </h1>
 
-            <p className='max-w-3xl mx-auto mt-6 text-lg text-center text-gray-800 md:text-xl'>
+            <p className='max-w-3xl mx-auto mt-6 text-lg text-center text-gray-800'>
               Expand your career with us for a better and bright future.
             </p>
           </div>

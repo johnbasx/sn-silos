@@ -13,7 +13,7 @@ const LookingForCareer = () => {
           <span className='block text-4xl text-emerald-50'>We’re hiring.</span>
 
           <ButtonLink
-            href='#!'
+            href='/career'
             variant='white'
             size='large'
             className='inline-flex items-center justify-center space-x-2'

@@ -5,7 +5,7 @@ import { TbArrowRight } from "react-icons/tb";
 const LetsTalk = () => {
   return (
     <section className='overflow-hidden bg-[url(https://images.unsplash.com/photo-1630394257979-0104638432aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYxfHxwdW5qYWJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60)] bg-cover bg-center bg-no-repeat'>
-      <div className='px-6 py-20 bg-black/25 md:p-12 lg:px-16 lg:py-32'>
+      <div className='px-6 py-20 min-h-[50vh] md:min-h-[60vh] flex justify-center items-center bg-black/25 md:p-12 lg:px-16 lg:py-32'>
         <div className='max-w-3xl mx-auto text-center'>
           <h2 className='text-3xl font-bold text-white drop-shadow sm:text-4xl md:text-5xl'>
             Let&apos;s talk about what growth means to you
