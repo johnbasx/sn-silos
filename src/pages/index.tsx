@@ -15,6 +15,8 @@ import SomeDetail from "@/components/home/SomeDetail";
 import TestimonialSection from "@/components/testimonials/TestimonialSection";
 import Partners from "@/components/home/Partners";
 import Layout from "@/components/layout/Layout";
+import ServicesWeAreOffering from "@/components/services/ServicesWeAreOffering";
+import HowWeWorkTimeline from "@/components/services/HowWeWorkTimeline";
 const HomePage = () => {
   const { t } = useTranslation("common");
 
@@ -22,8 +24,11 @@ const HomePage = () => {
     <Layout title='Sn Silos | Land of Technology'>
       <HeroSection />
       <Deals />
-      <OurBusinessUnits />
-      <OurSolutions />
+      {/* <OurBusinessUnits /> */}
+      {/* <OurSolutions /> */}
+      <ServicesWeAreOffering />
+      <HowWeWorkTimeline />
+
       <LetsTalk />
       <Offers />
       <OrganicFarming />

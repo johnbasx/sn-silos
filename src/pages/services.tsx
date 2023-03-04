@@ -1,3 +1,4 @@
+import OurBusinessUnits from "@/components/home/OurBusinessUnits";
 import OurSolutions from "@/components/home/OurSolutions";
 import Layout from "@/components/layout/Layout";
 import DiseaseControl from "@/components/services/DiseaseControl";
@@ -15,12 +16,14 @@ const ServicesPage = () => {
     <Layout title='Services - SN Silos | Land of Technlogy'>
       <LandDescription />
       <LandPlan />
+      <OurBusinessUnits />
+
       <HighQualityLand />
       <OrganicChef />
       <EndToEndSupply />
       <OurSolutions />
-      <HowWeWorkTimeline />
-      <ServicesWeAreOffering />
+      {/* <HowWeWorkTimeline /> */}
+      {/* <ServicesWeAreOffering /> */}
       <DiseaseControl />
     </Layout>
   );

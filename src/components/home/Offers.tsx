@@ -8,7 +8,7 @@ export const offersData = [
     id: nanoid(),
     title: "Veggies - Starting @₹129/-",
     about:
-      "Add color to your garden 4000+ veggies of different variety of vegetables",
+      "Add color to your garden 4000+ veggies of different variety of vegetables.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati adipisci sunt eos optio natus provident.",
     image: "/images/cards/veggies.jpg",
     link: "#!",
   },
@@ -16,7 +16,7 @@ export const offersData = [
     id: nanoid(),
     title: "Wheat - Starting just @₹19/-",
     about:
-      "Add color to your garden 4000+ veggies of different variety of vegetables",
+      "Add color to your garden 4000+ veggies of different variety of vegetables. esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas.",
     image: "/images/cards/wheat.jpg",
     link: "#!",
   },
@@ -24,7 +24,7 @@ export const offersData = [
     id: nanoid(),
     title: "Potato - Starting @₹39/-",
     about:
-      "Add color to your garden 4000+ veggies of different variety of vegetables",
+      "Add color to your garden 4000+ veggies of different variety of vegetables. esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas.",
     image: "/images/cards/potato.jpg",
     link: "#!",
   },
@@ -32,7 +32,7 @@ export const offersData = [
     id: nanoid(),
     title: "Healthy Veg - Starting @₹149/-",
     about:
-      "Add color to your garden 4000+ veggies of different variety of vegetables",
+      "Add color to your garden 4000+ veggies of different variety of vegetables, esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas.",
     image: "/images/cards/healthyveg.jpg",
     link: "#!",
   },
@@ -68,7 +68,7 @@ const Offers = () => {
               {item.title}
             </h3>
 
-            <p className='mt-3 text-sm text-gray-300 drop-shadow'>
+            <p className='max-w-xl mt-3 text-sm text-gray-300 line-clamp-2 md:line-clamp-4 drop-shadow'>
               {item.about}
             </p>
             <div className='mt-6 mb-3'>

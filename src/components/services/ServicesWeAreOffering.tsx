@@ -12,7 +12,7 @@ import {
 export const servicesOfferingData = [
   {
     id: nanoid(),
-    name: "Field Risk Map",
+    name: "Field Risk Mapping",
     about: "Visual display of the current disease infection risk for a field",
     Icon: TbLayout,
   },
@@ -50,10 +50,10 @@ export const servicesOfferingData = [
 
 const ServicesWeAreOffering = () => {
   return (
-    <div className='container px-6 mx-auto my-16 max-w-7xl'>
+    <div className='container px-6 mx-auto my-16 md:mb-32 max-w-7xl'>
       <div className='flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>
-          Services we are offering
+          Our Soil Sense Technology
         </h2>
         <p className='text-gray-600'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
@@ -85,7 +85,9 @@ const ServicesWeAreOffering = () => {
               >
                 <item.Icon className='w-12 h-12 text-emerald-600' />
                 <h3 className='text-xl font-bold'>{item.name}</h3>
-                <p className='line-clamp-4'>{item.about}</p>
+                <p className='line-clamp-2 md:line-clamp-4 text-ellipsis'>
+                  {item.about}
+                </p>
               </div>
             ))}
           </div>

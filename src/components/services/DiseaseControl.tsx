@@ -33,7 +33,7 @@ export const diseaseControlData = [
 const DiseaseControl = () => {
   return (
     <>
-      <div className='pt-12 lg:pt-32 bg-yellow-50'>
+      <div className='pt-12 lg:pt-32 bg-gray-50'>
         <div className='px-6 mx-auto max-w-7xl'>
           <div className='flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center'>
             <h2 className='text-4xl font-bold lg:text-5xl'>Disease Control</h2>

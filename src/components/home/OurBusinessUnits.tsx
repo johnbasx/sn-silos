@@ -8,6 +8,7 @@ const OurBusinessUnits = () => {
       <div className='flex flex-col gap-2 text-left md:text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>Our Business Units</h2>
       </div>
+      {/* Soil Sense Unit */}
       <article className='mx-auto md:py-8 sm:grid sm:grid-cols-2 max-w-7xl sm:items-center'>
         <div className='py-8 lg:py-24'>
           <div className='max-w-xl mx-auto text-left'>
@@ -54,8 +55,8 @@ const OurBusinessUnits = () => {
           className='object-cover w-full h-full sm:self-end rounded-3xl'
         />
       </article>
-
-      <article className='mx-auto mt-8 sm:grid sm:grid-cols-2 sm:items-center max-w-7xl'>
+      {/* Tech Land Unit */}
+      <article className='mx-auto mt-16 sm:grid sm:grid-cols-2 sm:items-center max-w-7xl'>
         <div className='order-2 py-8 lg:py-24'>
           <div className='max-w-xl mx-auto text-left'>
             <Image
@@ -99,6 +100,53 @@ const OurBusinessUnits = () => {
           unoptimized
           height={100}
           className='object-cover w-full h-full aspect-auto sm:self-end rounded-3xl'
+        />
+      </article>
+      {/* Organic Chef Unit */}
+      <article className='mx-auto mt-16 md:py-8 sm:grid sm:grid-cols-2 max-w-7xl sm:items-center'>
+        <div className='py-8 lg:py-24'>
+          <div className='max-w-xl mx-auto text-left'>
+            <Image
+              className='w-auto h-16'
+              src='/images/logo/organicchef.png'
+              alt='organic-chef-logo'
+              width={100}
+              height={100}
+            />
+            <h2 className='mt-4 text-2xl font-bold text-gray-900 md:text-3xl'>
+              Organic Chef
+            </h2>
+
+            <p className='mt-2 font-medium text-gray-700'>
+              Major sustainability impact in agriculture farming
+            </p>
+            <p className='mt-4 text-gray-500 md:'>
+              There is a concentrated effort to modernize the agriculture
+              industry, and data-driven weather intelligence is the key to
+              sustainability. Managing the decision-making processes of farming
+              has always been complex because there are so many different
+              limiting factors that aren’t within a farmer’s control. The
+              weather itself being chief among them.
+            </p>
+
+            <div className='mt-4 md:mt-8'>
+              <a
+                href='#!'
+                className='inline-block px-12 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <Image
+          alt='Organic Chef'
+          src='https://images.unsplash.com/photo-1591586116988-62fe65164f8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZ2dpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60'
+          width={100}
+          unoptimized
+          height={100}
+          className='object-cover w-full h-full sm:self-end rounded-3xl'
         />
       </article>
     </section>
