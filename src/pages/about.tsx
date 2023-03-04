@@ -3,10 +3,13 @@ import OurJourney from "@/components/about/OurJourney";
 import OurVision from "@/components/about/OurVision";
 import Team from "@/components/about/Team";
 import Layout from "@/components/layout/Layout";
-import Image from "next/image";
 import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
+  const { t } = useTranslation("about");
+
   return (
     <Layout title='About - SN Silos | Land of Technlogy'>
       <AboutHero />
@@ -18,3 +21,9 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["about"])),
+  },
+});

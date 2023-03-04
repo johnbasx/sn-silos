@@ -2,8 +2,6 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HeroSection from "@/components/home/hero-section/HeroSection";
 import Deals from "@/components/home/Deals";
-import OurBusinessUnits from "@/components/home/OurBusinessUnits";
-import OurSolutions from "@/components/home/OurSolutions";
 import LetsTalk from "@/components/home/LetsTalk";
 import Offers from "@/components/home/Offers";
 import OrganicFarming from "@/components/home/OrganicFarming";
@@ -17,11 +15,12 @@ import Partners from "@/components/home/Partners";
 import Layout from "@/components/layout/Layout";
 import ServicesWeAreOffering from "@/components/services/ServicesWeAreOffering";
 import HowWeWorkTimeline from "@/components/services/HowWeWorkTimeline";
+
 const HomePage = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("home");
 
   return (
-    <Layout title='Sn Silos | Land of Technology'>
+    <Layout title={t("title")}>
       <HeroSection />
       <Deals />
       {/* <OurBusinessUnits /> */}
@@ -47,6 +46,6 @@ export default HomePage;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale, ["home"])),
   },
 });
