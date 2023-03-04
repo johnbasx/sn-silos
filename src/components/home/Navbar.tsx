@@ -14,6 +14,9 @@ const Navbar = () => {
 
   return (
     <div className='bg-white isolate'>
+      <div className='flex items-center justify-center w-full h-8 text-xs font-semibold text-center text-white bg-gradient-to-r from-orange-700 to-orange-400'>
+        <span>This website is under development</span>
+      </div>
       <nav className='sticky top-0 z-50 px-6 py-3 bg-white drop-shadow shadow-black'>
         <div className='flex items-center justify-between mx-auto max-w-7xl'>
           <div className='flex lg:flex-1'>
@@ -108,8 +111,10 @@ const Navbar = () => {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className={clsx('block px-3 py-2 -mx-3 text-base font-semibold duration-150 leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10', 
-                        currentRoute === item.href?'bg-emerald-400/10': "")}
+                        className={clsx(
+                          "block px-3 py-2 -mx-3 text-base font-semibold duration-150 leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10",
+                          currentRoute === item.href ? "bg-emerald-400/10" : ""
+                        )}
                       >
                         {item.name}
                       </Link>

@@ -74,7 +74,7 @@ const OrganicChef = () => {
               />
 
               <div className='p-6 text-sm'>
-                <span className='px-2 py-1.5 text-sm font-semibold rounded-full bg-yellow-500/20 text-yellow-800/90'>
+                <span className='px-2 py-1.5 text-sm font-semibold rounded-full bg-orange-300/20 text-orange-600/90'>
                   {item.name}
                 </span>
                 <ul className='grid grid-cols-1 gap-3 mt-6'>
@@ -94,7 +94,7 @@ const OrganicChef = () => {
                 <div className='flex items-center gap-8 mt-6'>
                   <Link
                     href={item.link}
-                    className='inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold text-center text-white duration-150 rounded-md bg-emerald-800 hover:bg-emerald-700'
+                    className='inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold text-center text-white duration-150 rounded-md bg-emerald-600 hover:bg-emerald-700'
                   >
                     {item.linkLabel}
                     <TbArrowRight />
