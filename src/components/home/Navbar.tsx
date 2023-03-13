@@ -5,17 +5,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Fragment, useState } from "react";
+import { useTranslation } from "next-i18next";
 import { HiBars3, HiPhone, HiXMark } from "react-icons/hi2";
+import LocaleSwitcher from "../layout/LocaleSwitcher";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
+  const { t, i18n, ready } = useTranslation("common");
+  const navTrans = t("navigation", { returnObjects: true });
+
+  if (!ready)
+    return (
+      <>
+        <p>loading translations...</p>
+      </>
+    );
+  // console.log(navTrans);
 
   return (
     <div className='bg-white isolate'>
       <div className='flex items-center justify-center w-full h-8 text-xs font-semibold text-center text-white bg-gradient-to-r from-orange-700 to-orange-400'>
-        <span>This website is under development</span>
+        <span>
+          {/* This website is under development */}
+          {t("under-development")}
+        </span>
       </div>
       <nav className='sticky top-0 z-50 px-6 py-3 bg-white drop-shadow shadow-black'>
         <div className='flex items-center justify-between mx-auto max-w-7xl'>
@@ -42,7 +57,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className='hidden lg:flex lg:gap-x-12'>
-            {navigation.map((item) => (
+            {navTrans.map((item, idx) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -54,19 +69,22 @@ const Navbar = () => {
                 )}
               >
                 {item.name}
+                {/* {t(`navigation.${idx}.name`)} */}
               </Link>
             ))}
           </div>
-          <div className='hidden gap-3 lg:flex lg:flex-1 lg:justify-end'>
+          <div className='hidden gap-4 lg:flex lg:flex-1 lg:justify-end'>
+            <LocaleSwitcher onClick={() => setMobileMenuOpen(false)} />
             <a
               href='#!'
               className='inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold leading-6 text-gray-900 duration-150 bg-gray-200 rounded-md cursor-pointer hover:bg-gray-300'
             >
               <HiPhone />
-              +91-9998567392
+              {/* +91-9998567392 */}
+              {t("phone")}
             </a>
             <button className='px-4 py-2 text-sm font-semibold text-white duration-150 rounded-md bg-emerald-600 hover:bg-emerald-700'>
-              Download Now
+              {t("download")}
             </button>
           </div>
         </div>
@@ -107,7 +125,7 @@ const Navbar = () => {
               <div className='flow-root mt-6'>
                 <div className='-my-6 divide-y divide-gray-500/10'>
                   <div className='py-6 space-y-2'>
-                    {navigation.map((item) => (
+                    {navTrans.map((item, idx) => (
                       <Link
                         key={item.name}
                         href={item.href}
@@ -117,18 +135,26 @@ const Navbar = () => {
                         )}
                       >
                         {item.name}
+                        {/* {t(`navigation.${idx}.name`)} */}
+
+                        {/* @ts-ignore */}
+                        {/* {t(`navigation.${idx}.name`)} */}
                       </Link>
                     ))}
                   </div>
                   <div className='flex flex-col gap-8 py-6'>
+                    <LocaleSwitcher onClick={() => setMobileMenuOpen(false)} />
                     <a
                       href='#!'
                       className='-mx-3 rounded-lg py-2.5 px-3 text-base font-semibold leading-6 inline-flex items-center gap-2 text-emerald-50 hover:bg-emerald-400/10'
                     >
-                      <HiPhone /> +91-9977162819
+                      <HiPhone />
+                      {/* +91-9977162819 */}
+                      {t("phone")}
                     </a>
                     <button className='px-4 py-2.5 font-semibold duration-150 bg-white rounded-md text-emerald-900 hover:bg-gray-50'>
-                      Download Now
+                      {/* Download Now */}
+                      {t("download")}
                     </button>
                   </div>
                 </div>

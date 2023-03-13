@@ -1,0 +1,25 @@
+{
+  "gallery": {
+    "main": "Press",
+    "subheading": "Get the power of customization you need to manage your transactions, payments and business",
+    "tab-items": [
+      { "id": 1, "name": "Photos" },
+      { "id": 2, "name": "Videos" }
+    ],
+    "select-tab": "Select a tab",
+    "photo-tabs": [
+      { "name": "All", "href": "#!" },
+      { "name": "Soil Sense", "href": "#!" },
+      { "name": "SN Silos", "href": "#!" },
+      { "name": "Organic Chef", "href": "#!" },
+      { "name": "Tech Land", "href": "#!" },
+      { "name": "Achievments", "href": "#!" }
+    ],
+    "video-tabs": [
+      { "name": "All", "href": "#!", "current": true },
+      { "name": "Soil Sense", "href": "#!", "current": false },
+      { "name": "SN Silos", "href": "#!", "current": false },
+      { "name": "Organic Chef", "href": "#!", "current": false }
+    ]
+  }
+}

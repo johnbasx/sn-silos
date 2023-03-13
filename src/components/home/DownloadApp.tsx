@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HiCheck, HiStar, HiChevronRight } from "react-icons/hi";
+import { useTranslation } from "next-i18next";
 
 const features = [
   {
@@ -45,6 +46,7 @@ const features = [
 ];
 
 const DownloadApp = () => {
+  const { t } = useTranslation("home");
   return (
     <div className='pb-8 bg-white sm:pb-12 lg:pb-12'>
       <div className='pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48'>
@@ -54,20 +56,27 @@ const DownloadApp = () => {
               <div>
                 <a href='#!' className='inline-flex space-x-4'>
                   <span className='rounded bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-600 tracking-wide uppercase'>
-                    Download Now!
+                    {/* Download Now! */}
+                    {t("download-app.tagline")}
                   </span>
                 </a>
               </div>
               <div className='mt-6 sm:max-w-xl'>
                 <h1 className='text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl'>
-                  Search Best Deals{" "}
-                  <span className='text-emerald-500'>on go</span>
+                  {/* Search Best Deals{" "} */}
+                  {t("download-app.heading")}
+
+                  <span className='text-emerald-500'>
+                    {/* on go */}
+                    {t("download-app.on-go")}
+                  </span>
                 </h1>
                 <p className='mt-6 text-gray-500'>
-                  You can new updates and exciting offers if you use our
+                  {/* You can new updates and exciting offers if you use our
                   apps.Please Download from the playstore or Appstore. Anim aute
                   id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-                  cupidatat commodo.
+                  cupidatat commodo. */}
+                  {t("download-app.description")}
                 </p>
               </div>
 

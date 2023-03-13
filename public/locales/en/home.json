@@ -1,3 +1,244 @@
 {
-  "title": "SN Silos | Land of Technology"
+  "title": "SN Silos | Land of Technology",
+  "hero-section": {
+    "action": "The future of technology.",
+    "read-more": "Read more",
+    "heading": "SN Silos to enrich your business",
+    "tagline": "Let's rebuild with the best technologies and our people",
+    "join-us": "Join us now",
+    "learn-more": "Learn more",
+    "header-cards": [
+      {
+        "name": "Soil Sense",
+        "description": "Organic and high tech farming"
+      },
+      {
+        "name": "Tech Land",
+        "description": "Buy and sell land with advanced technology"
+      },
+      {
+        "name": "Organic Chef",
+        "description": "Marketplace for all organic products"
+      }
+    ]
+  },
+  "deals-section": {
+    "heading": "SN Silos deals with",
+    "tagline": "Here are some of the sectors and fields SN Silos deals with"
+  },
+  "services-offering": {
+    "heading": "Our Soil Sense Technology",
+    "tagline": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "topic": "Soil Sense System Disease Control",
+    "description": "Know exactly when, where, and what to apply, even the best time of day to spray. Save costs while you maximize protection with the most tested and reliable digital fungal disease management advisor in the market.",
+    "services-offering-data": [
+      {
+        "name": "Field Risk Mapping",
+        "about": "Visual display of the current disease infection risk for a field"
+      },
+      {
+        "name": "Spraying Conditions",
+        "about": "Tracks weather to advise on the best days and times to spray"
+      },
+      {
+        "name": "Infection Chance",
+        "about": "Near-term graphical view showing possible chance of  infection"
+      },
+      {
+        "name": "Risk Level Summary",
+        "about": "Monitors the current field-specific and regional disease risk"
+      },
+      {
+        "name": "Record Spray Events",
+        "about": "Track activities and increase accuracy by logging spray events"
+      },
+      {
+        "name": "Advanced Graphs",
+        "about": "Additional information available for a deeper dive into the data"
+      }
+    ]
+  },
+  "how-we-work-timeline": {
+    "sub-heading": "Working Process",
+    "heading": "How do we work",
+    "description": "Here’s your guide on how we work and how SN Silos strivesto meet the fertilizer, seed, feed and other agri-inputs needs of thousands of farmers in more than 80 cities in India.",
+    "explore": "Explore Now",
+    "steps": [
+      {
+        "id": 1,
+        "name": "Download the app",
+        "about": "Compare the latest seed, fertilizer and feed prices in your area"
+      },
+      {
+        "id": 2,
+        "name": "Apply and get approved instantly!",
+        "about": "Receive the best prices, whether you plan to pay at harvest or today with cash."
+      },
+      {
+        "id": 3,
+        "name": "Pick up from retailers",
+        "about": "Pick your order up from the nearest authorised Sn Silos retailers."
+      },
+      {
+        "id": 4,
+        "name": "Online Marketplace",
+        "about": "You can also easily shop from the comfort of your home using our online e-commerce market platform for fast checkouts and ultra fast deliveries."
+      }
+    ]
+  },
+  "lets-talk": {
+    "heading": "Let's talk about what growth means to you",
+    "sub-heading": " Have questions about our product's or growing in general",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi doloribus iure architecto quae voluptatum beatae excepturi dolores.",
+    "retailers": "Retailers",
+    "commercial": "Commercial Growers"
+  },
+  "offers": {
+    "heading": "Our offers",
+    "description": "We aim to become one of India's leading marketplace in the field of agriculture, real-estate and much more. Check out our various offers",
+    "checkout": "Check out",
+    "offers-data": [
+      {
+        "title": "Veggies - Starting @₹129/-",
+        "about": "Add color to your garden 4000+ veggies of different variety of vegetables.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati adipisci sunt eos optio natus provident."
+      },
+      {
+        "title": "Wheat - Starting just @₹19/-",
+        "about": "Add color to your garden 4000+ veggies of different variety of vegetables. esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas."
+      },
+      {
+        "title": "Potato - Starting @₹39/-",
+        "about": "Add color to your garden 4000+ veggies of different variety of vegetables. esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas."
+      },
+      {
+        "title": "Healthy Veg - Starting @₹149/-",
+        "about": "Add color to your garden 4000+ veggies of different variety of vegetables, esse voluptas veniam explicabo eaque voluptatibus amet. Rem eligendi alias culpa voluptatibus laboriosam quas."
+      }
+    ]
+  },
+  "organic-farming": {
+    "heading": "Learn more of our Organic Farming",
+    "description": "SN Silos deals to become one of India's leading marketplace in the field of agriculture, real-estate and much more",
+    "topic": "About our organic farming",
+    "about": "SN Silos organic farming, agricultural system that uses ecologically based pest controls and biological fertilizers derived largely from animal and plant wastes and nitrogen-fixing cover crops. Modern organic farming was developed as a response to the environmental harm caused by the use of chemical pesticides and synthetic fertilizers in conventional agriculture, and it has numerous ecological benefits.",
+    "objectives": {
+      "heading": "Objectives of adopting organic farming",
+      "steps": [
+        "Make sure the right soil cultivation at the right time",
+        "Increase genetic diversity.",
+        "Promote more usage of natural pesticides",
+        "Keep and build good soil structure and soil fertility",
+        "Control pests, diseases and weeds"
+      ],
+      "learn-more": "Learn more"
+    }
+  },
+  "IOTServices": {
+    "heading": "Our Organic Products and Services",
+    "tagline": "What we are doing and where we do",
+    "checkout": "Check out",
+    "services-data": [
+      {
+        "name": "Agriculture Products",
+        "about": "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae."
+      },
+      {
+        "name": "Fresh Vegetables",
+        "about": "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae."
+      },
+      {
+        "name": "Organic Items",
+        "about": "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae."
+      },
+      {
+        "name": "Dairy Products",
+        "about": "There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae."
+      }
+    ]
+  },
+  "quality-food": {
+    "heading": "Quality Food and Ingredients",
+    "tagline": "What we are doing and where we do",
+    "quality-foods-data": [
+      {
+        "name": "Fresh Veggies",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      },
+      {
+        "name": "Organic Fruits",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      },
+      {
+        "name": "Fresh fruits",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      },
+      {
+        "name": "Spinach",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      },
+      {
+        "name": "Cauliflower",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      },
+      {
+        "name": "Fruit Tree",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus animi, pariatur."
+      }
+    ]
+  },
+  "why-us": {
+    "heading": "Why Choose Us?",
+    "tagline": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.",
+    "getstarted": "Get Started",
+    "why-us-data": [
+      {
+        "name": "Exceptional Service",
+        "about": "We think providing exceptional customer service is our USP, our main strength. We take pride in providing outstanding services to our clients."
+      },
+      {
+        "name": "High performance solutions",
+        "about": "We think providing exceptional customer service is our USP, our main strength. We take pride in providing outstanding services to our clients."
+      },
+      {
+        "name": "Market Specialist",
+        "about": "We think providing exceptional customer service is our USP, our main strength. We take pride in providing outstanding services to our clients."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Testimonial and Reviews",
+    "tagline": "We love",
+    "sub-heading": "What people say about us",
+    "verified-customer": "Verified customer",
+    "empty-card-heading": "Want to view more testimonials & reviews of our awesome customers?",
+    "view-more": "View more"
+  },
+  "some-detail": [
+    {
+      "name": "Best Property lists",
+      "about": "We provide consumers with a content rich listings in a handy format"
+    },
+    {
+      "name": "Best price in market",
+      "about": "Price estimates and sales histories for property, updating information"
+    },
+    {
+      "name": "Guaranteed services",
+      "about": "Our managers will keep you informed and you can act with certainty"
+    },
+    {
+      "name": "Marketing research",
+      "about": "All our marketing researchers today have a tough job multitasking"
+    }
+  ],
+  "download-app": {
+    "tagline": "Download Now!",
+    "heading": "Search Best Deals ",
+    "on-go": "on go",
+    "description": "You can new updates and exciting offers if you use our apps. Please Download from the playstore or Appstore. Anim aute id magn aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo."
+  },
+  "partners": {
+    "heading": "Our supporters and partners",
+    "tagline": "Trusted by multiple businesses all over India"
+  }
 }

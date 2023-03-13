@@ -20,6 +20,6 @@ export default PressPage;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["gallery"])),
+    ...(await serverSideTranslations(locale, ["press"])),
   },
 });

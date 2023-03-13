@@ -13,6 +13,7 @@ import soilSenseIcon from "@public/images/logo/soilsense.png";
 import techLandIcon from "@public/images/logo/techland.png";
 import organicChefIcon from "@public/images/logo/organicchef.png";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export const headerCardsData = [
   {
@@ -42,12 +43,14 @@ export const headerCardsData = [
 ];
 
 const HeroSection = () => {
+  const { t } = useTranslation("home");
+
   return (
     <main>
       <div className='relative flex items-center justify-center overflow-hidden isolate h-2/3'>
         <Image
           src='https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTczfHxkcm9uZSUyMGZhcm1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=80&blend=064e3b&sat=0&exp=5&blend-mode=multiply'
-          alt='ABout Us backdrop image'
+          alt='About Us backdrop image'
           height={100}
           width={100}
           unoptimized
@@ -58,34 +61,42 @@ const HeroSection = () => {
           <div className='max-w-2xl pt-24 pb-32 mx-auto sm:py-48 lg:py-46'>
             <div className='flex justify-center mb-8'>
               <div className='relative px-3 py-1 text-xs font-medium leading-6 text-gray-100 rounded-full bg-gray-800/50 backdrop-blur-md ring-1 ring-gray-100/10 hover:ring-gray-100/20'>
-                The future of technology.
+                {/* The future of technology. */}
+                {t("hero-section.action")}
                 <Link
                   href='/about'
                   className='ml-1 font-semibold text-emerald-400'
                 >
-                  Read more <span aria-hidden='true'>&rarr;</span>
+                  {/* Read more  */}
+                  {t("hero-section.read-more")}
+                  <span aria-hidden='true'>&rarr;</span>
                 </Link>
               </div>
             </div>
             <div className='text-center'>
               <h1 className='text-4xl font-bold tracking-tight drop-shadow text-gray-50 sm:text-6xl'>
-                SN Silos to enrich your business
+                {/* SN Silos to enrich your business */}
+                {t("hero-section.heading")}
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-200 drop-shadow'>
-                Let&apos;s rebuild with the best technologies and our people
+                {/* Let&apos;s rebuild with the best technologies and our people */}
+                {t("hero-section.tagline")}
               </p>
               <div className='flex items-center justify-center mt-10 gap-x-6'>
                 <Link
                   href='/about'
                   className='px-4 py-2 text-base font-semibold leading-7 text-white duration-150 rounded-md shadow-sm bg-emerald-600 hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'
                 >
-                  Join us now
+                  {/* Join us now */}
+                  {t("hero-section.join-us")}
                 </Link>
                 <Link
                   href='/press'
                   className='text-base font-semibold leading-7 text-gray-100 drop-shadow'
                 >
-                  Learn more <span aria-hidden='true'>→</span>
+                  {/* Learn more  */}
+                  {t("hero-section.learn-more")}
+                  <span aria-hidden='true'>→</span>
                 </Link>
               </div>
             </div>
@@ -115,8 +126,16 @@ const HeroSection = () => {
                   unoptimized
                   className='object-contain w-12 h-12 drop-shadow lg:w-auto lg:h-14'
                 />
-                <h3 className='mt-2 text-lg font-semibold'>{item.name}</h3>
-                <p className='text-xs'>{item.description}</p>
+                <h3 className='mt-2 text-lg font-semibold'>
+                  {/* {item.name} */}
+                  {/* @ts-ignore */}
+                  {t(`hero-section.header-cards.${index}.name`)}
+                </h3>
+                <p className='text-xs'>
+                  {/* {item.description} */}
+                  {/* @ts-ignore */}
+                  {t(`hero-section.header-cards.${index}.description`)}
+                </p>
               </Link>
             ))}
           </div>

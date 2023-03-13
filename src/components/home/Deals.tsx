@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 
 export const dealsData = [
   {
@@ -55,15 +56,19 @@ export const dealsData = [
 ];
 
 const Deals = () => {
+  const { t } = useTranslation("home");
+
   return (
     <section className='py-12 lg:py-24'>
       <div className='flex flex-col items-center justify-center px-4 py-6 mx-auto text-center max-w-7xl'>
         <div className='mt-4 mb-10'>
           <h1 className='text-4xl font-bold lg:text-5xl'>
-            SN Silos deals with
+            {/* SN Silos deals with */}
+            {t("deals-section.heading")}
           </h1>
           <p className='mt-2 text-gray-500'>
-            Here are some of the sectors and fields SN Silos deals with
+            {/* Here are some of the sectors and fields SN Silos deals with */}
+            {t("deals-section.tagline")}
           </p>
         </div>
         <div className='flex flex-wrap items-center justify-center gap-10 md:gap-32'>

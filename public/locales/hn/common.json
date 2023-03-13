@@ -1,3 +1,71 @@
 {
-  "header": "Next.js में आपका स्वागत है!"
+  "header": "Next.js में आपका स्वागत है!",
+  "under-development": "यह वेबसाइट विकास के अधीन है",
+  "navigation": [
+    { "name": "सेवाएं", "href": "/services" },
+    { "name": "प्रेस", "href": "/press" },
+    { "name": "चारों ओर", "href": "/about" },
+    { "name": "पेशा", "href": "/career" },
+    { "name": "संपर्क", "href": "/contact" }
+  ],
+  "change": "भाषा बदलो ",
+  "phone": "+91-9977162819",
+  "download": "अब डाउनलोड करे",
+  "footer": {
+    "heading": "क्या आप चाहते हैं कि हम आपको हमारे ताज़ा समाचारों के साथ ईमेल करें?",
+    "subscribe": "सदस्यता लें",
+    "footerlinks": [
+      {
+        "category": "अन्वेषण करना",
+        "links": [
+          {
+            "name": "कम्पनी के बारे में",
+            "url": "/about"
+          },
+          {
+            "name": "हमारे किसान",
+            "url": "/press"
+          },
+          {
+            "name": "नई परियोजनाएं",
+            "url": "/career"
+          }
+        ]
+      },
+      {
+        "category": "सेवाएं",
+        "links": [
+          {
+            "name": "हमारा मंच",
+            "url": "/services"
+          },
+          {
+            "name": "एसएन सेवाएं",
+            "url": "/services"
+          },
+          {
+            "name": "ऐप डाउनलोड",
+            "url": "/contact"
+          }
+        ]
+      },
+      {
+        "category": "अन्य",
+        "links": [
+          {
+            "name": "करियर",
+            "url": "/career"
+          },
+          {
+            "name": "प्रेस",
+            "url": "/press"
+          },
+          {
+            "name": "संपर्क करें",
+            "url": "/contact"
+          }
+        ]
+      }
+    ]
+  }
 }

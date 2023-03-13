@@ -17,10 +17,10 @@ import ServicesWeAreOffering from "@/components/services/ServicesWeAreOffering";
 import HowWeWorkTimeline from "@/components/services/HowWeWorkTimeline";
 
 const HomePage = () => {
-  const { t } = useTranslation("home");
+  const { t } = useTranslation(["home", "common"]);
 
   return (
-    <Layout title={t("title")}>
+    <Layout title={t("home:title")}>
       <HeroSection />
       <Deals />
       {/* <OurBusinessUnits /> */}
@@ -46,6 +46,6 @@ export default HomePage;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["home"])),
+    ...(await serverSideTranslations(locale, ["home", "common"])),
   },
 });

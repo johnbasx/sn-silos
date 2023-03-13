@@ -1,3 +1,71 @@
 {
-  "header": "Welcome to Next.js!"
+  "header": "Welcome to Next.js!",
+  "under-development": "This website is under development",
+  "navigation": [
+    { "name": "Services", "href": "/services" },
+    { "name": "Press", "href": "/press" },
+    { "name": "About", "href": "/about" },
+    { "name": "Career", "href": "/career" },
+    { "name": "Contact", "href": "/contact" }
+  ],
+  "change": "Change to ",
+  "phone": "+91-9977162819",
+  "download": "Download Now",
+  "footer": {
+    "heading": "Want us to email you with our latest news?",
+    "subscribe": "Subscribe",
+    "footerlinks": [
+      {
+        "category": "Explore",
+        "links": [
+          {
+            "name": "About",
+            "url": "/about"
+          },
+          {
+            "name": "Our Farmers",
+            "url": "/press"
+          },
+          {
+            "name": "New Projects",
+            "url": "/career"
+          }
+        ]
+      },
+      {
+        "category": "Services",
+        "links": [
+          {
+            "name": "Our platform",
+            "url": "/services"
+          },
+          {
+            "name": "SN services",
+            "url": "/services"
+          },
+          {
+            "name": "App downloads",
+            "url": "/contact"
+          }
+        ]
+      },
+      {
+        "category": "Others",
+        "links": [
+          {
+            "name": "Careers",
+            "url": "/career"
+          },
+          {
+            "name": "Press",
+            "url": "/press"
+          },
+          {
+            "name": "Contact Us",
+            "url": "/contact"
+          }
+        ]
+      }
+    ]
+  }
 }

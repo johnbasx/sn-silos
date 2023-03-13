@@ -8,39 +8,19 @@ export const teamData = [
   {
     id: nanoid(),
     name: "Praveen Soni",
-    designation: "CTO",
-    image:
-      "https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80",
+    designation: "Director",
+    work: "Tech and Marketing",
+    image: "/images/team/praveen.jpg",
     linkedIn: "",
     instagram: "",
     twitter: "",
   },
   {
     id: nanoid(),
-    name: "Ashish Singh",
-    designation: "Lead Developer",
-    image:
-      "https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80",
-    linkedIn: "",
-    instagram: "",
-    twitter: "",
-  },
-  {
-    id: nanoid(),
-    name: "Kumar Soni",
-    designation: "Backend Developer",
-    image:
-      "https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80",
-    linkedIn: "",
-    instagram: "",
-    twitter: "",
-  },
-  {
-    id: nanoid(),
-    name: "Baburao Mastani",
-    designation: "Marketting Head",
-    image:
-      "https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80",
+    name: "Nitish Narula",
+    designation: "Director",
+    work: "Public Relation & Investment",
+    image: "/images/team/nitish.jpg",
     linkedIn: "",
     instagram: "",
     twitter: "",
@@ -64,7 +44,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-4'>
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
           {teamData.map((member, idx) => (
             <div
               className='w-full p-6 rounded-2xl bg-gray-200/50'
@@ -76,19 +56,22 @@ const Team = () => {
                     alt={member.name + member.id}
                     height={300}
                     width={300}
-                    className='rounded-full aspect-square'
+                    className='object-cover rounded-full aspect-square'
                     src={member.image}
                   />
                 </a>
 
                 <div className='mt-4 text-center'>
-                  <h1 className='text-xl font-bold text-gray-900'>
+                  <h3 className='text-2xl font-bold text-gray-900'>
                     {member.name}
-                  </h1>
+                  </h3>
 
-                  <div className='font-medium text-gray-500'>
-                    {member.designation}
+                  <div className='text-lg font-semibold text-gray-700'>
+                    <h4>{member.designation}</h4>
                   </div>
+                  <span className='font-medium text-gray-500'>
+                    ({member.work})
+                  </span>
 
                   <div className='flex items-center justify-center transition-opacity duration-300'>
                     <a

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 import {
   FaFacebook,
   FaGithub,
@@ -76,12 +77,15 @@ export const footerLinks = [
 ];
 
 const Footer = () => {
+  const { t } = useTranslation("common");
+  const footerTranslations = t("footer.footerlinks", { returnObjects: true });
   return (
     <footer aria-label='Site Footer' className='bg-emerald-900'>
       <div className='max-w-screen-xl px-4 pt-24 pb-8 mx-auto sm:px-6 lg:px-8'>
-        <div className='max-w-md mx-auto'>
+        <div className='max-w-lg mx-auto'>
           <h2 className='block text-4xl font-bold text-center text-white sm:text-5xl'>
-            Want us to email you with our latest news?
+            {/* Want us to email you with our latest news? */}
+            {t("footer.heading")}
           </h2>
 
           <form className='mt-6'>
@@ -98,7 +102,8 @@ const Footer = () => {
               />
 
               <button className='absolute px-5 py-3 text-sm font-semibold text-white transition -translate-y-1/2 rounded-full bg-emerald-800 top-1/2 right-1 hover:bg-emerald-900'>
-                Subscribe
+                {/* Subscribe */}
+                {t("footer.subscribe")}
               </button>
             </div>
           </form>
@@ -107,11 +112,14 @@ const Footer = () => {
         <div className='grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 lg:gap-32'>
           <div className='max-w-sm mx-auto lg:max-w-none'>
             <p className='mt-4 text-sm text-center text-gray-300 lg:text-left'>
-              SN Silos Private Limited&apos;s Corporate Identification Number is
-              (CIN) U51100DL2018PTC339003 and its registration number is
-              339003.Its Email address is nitish.narula14@gmail.com and its
-              registered address is 2637, FIRST FLOOR, UNIT-II, NAYA BAZAR DELHI
-              North Delhi DL 110006 IN .
+              <strong>SN Silos Private Limited</strong> <br />
+              Corporate Identification Number : (CIN) U51100DL2018PTC339003
+              <br />
+              Registration Number : 339003.
+              <br />
+              Email address : nitish.narula14@gmail.com <br />
+              Registered address : 2637, FIRST FLOOR, UNIT-II, NAYA BAZAR DELHI
+              North Delhi DL 110006 IN.
             </p>
 
             <div className='flex justify-center gap-4 mt-6 lg:justify-start'>
@@ -187,7 +195,8 @@ const Footer = () => {
                       className='text-white transition hover:text-white/75'
                       href={link.url}
                     >
-                      {link.name}
+                      {/* {link.name} */}
+                      {footerTranslations[idx].links[index].name}
                     </Link>
                   ))}
                 </nav>

@@ -4,6 +4,7 @@ import { RiServiceLine, RiProjector2Line } from "react-icons/ri";
 import { CgPerformance } from "react-icons/cg";
 import { TbArrowRight } from "react-icons/tb";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export const whyusData = [
   {
@@ -33,16 +34,24 @@ export const whyusData = [
 ];
 
 const WhyUs = () => {
+  const { t } = useTranslation("home");
+  const whyUsTranslations = t("why-us.why-us-data", {
+    returnObjects: true,
+  });
   return (
     <section className='text-white bg-gradient-to-br from-emerald-900 to-emerald-800'>
       <div className='px-6 py-16 mx-auto max-w-7xl lg:px-0'>
         <div className='max-w-lg mx-auto text-center'>
-          <h2 className='text-3xl font-bold sm:text-4xl'>Why Choose Us?</h2>
+          <h2 className='text-3xl font-bold sm:text-4xl'>
+            {/* Why Choose Us? */}
+            {t("why-us.heading")}
+          </h2>
 
           <p className='mt-4 text-gray-200'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
-            fugit consequuntur saepe laborum.
+            fugit consequuntur saepe laborum. */}
+            {t("why-us.tagline")}
           </p>
         </div>
 
@@ -54,9 +63,15 @@ const WhyUs = () => {
             >
               <item.Icon className='w-20 h-20 text-emerald-800' />
 
-              <h2 className='mt-4 text-xl font-bold text-black'>{item.name}</h2>
+              <h2 className='mt-4 text-xl font-bold text-black'>
+                {/* {item.name} */}
+                {whyUsTranslations[index].name}
+              </h2>
 
-              <p className='mt-1 text-sm text-gray-500'>{item.about}</p>
+              <p className='mt-1 text-sm text-gray-500'>
+                {/* {item.about} */}
+                {whyUsTranslations[index].about}
+              </p>
             </div>
           ))}
         </div>
@@ -66,7 +81,9 @@ const WhyUs = () => {
             href='/about'
             className='inline-flex items-center gap-1 px-8 py-3 mt-8 text-black bg-white border rounded-md hover:bg-gray-100 focus:outline-none focus:ring active:text-emerald-700'
           >
-            <span className='text-sm font-medium'> Get Started </span>
+            <span className='text-sm font-medium'>
+              {t("why-us.getstarted")}
+            </span>
 
             <TbArrowRight />
           </Link>

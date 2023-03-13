@@ -3,17 +3,25 @@ import Link from "next/link";
 import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { TbArrowRight, TbCheck } from "react-icons/tb";
+import { useTranslation } from "next-i18next";
 
 const OrganicFarming = () => {
+  const { t } = useTranslation("home");
+  const objectiveTranslations = t("organic-farming.objectives.steps", {
+    returnObjects: true,
+  });
+
   return (
     <section>
       <div className='flex flex-col items-center justify-center max-w-3xl gap-2 px-6 mx-auto mb-12 text-center'>
         <h2 className='text-4xl font-bold text-black lg:text-5xl'>
-          Learn more of our Organic Farming
+          {/* Learn more of our Organic Farming */}
+          {t("organic-farming.heading")}
         </h2>
         <p className='text-gray-500'>
-          SN Silos deals to become one of Indi&apos;s leading marketplace in the
-          field of agriculture, real-estate and much more
+          {/* SN Silos deals to become one of Indi&apos;s leading marketplace in the
+          field of agriculture, real-estate and much more */}
+          {t("organic-farming.description")}
         </p>
       </div>
       <div className='px-6 py-2 mx-auto lg:px-0 max-w-7xl'>
@@ -21,43 +29,35 @@ const OrganicFarming = () => {
           <div className='col-span-2 p-8 rounded-3xl bg-emerald-900 md:p-12 lg:px-16 lg:py-24'>
             <div className='max-w-xl mx-auto text-left drop-shadow'>
               <h2 className='text-2xl font-bold text-white md:text-3xl'>
-                About our organic farming
+                {/* About our organic farming */}
+                {t("organic-farming.topic")}
               </h2>
 
               <p className='hidden text-white/90 sm:mt-4 sm:block'>
-                SN Silos organic farming, agricultural system that uses
+                {/* SN Silos organic farming, agricultural system that uses
                 ecologically based pest controls and biological fertilizers
                 derived largely from animal and plant wastes and nitrogen-fixing
                 cover crops. Modern organic farming was developed as a response
                 to the environmental harm caused by the use of chemical
                 pesticides and synthetic fertilizers in conventional
-                agriculture, and it has numerous ecological benefits.
+                agriculture, and it has numerous ecological benefits. */}
+                {t("organic-farming.about")}
               </p>
               <div className='mt-5 text-gray-100'>
                 <h5 className='text-lg font-bold'>
-                  Objectives of adopting organic farming
+                  {/* Objectives of adopting organic farming */}
+                  {t("organic-farming.objectives.heading")}
                 </h5>
                 <ul className='flex flex-col items-start justify-start gap-2 mt-3'>
-                  <li className='inline-flex items-baseline justify-start gap-1'>
-                    <TbCheck className='text-lg text-yellow-400' />
-                    Increase genetic diversity.
-                  </li>
-                  <li className='inline-flex items-baseline justify-start gap-1'>
-                    <TbCheck className='text-lg text-yellow-400' />
-                    Promote more usage of natural pesticides
-                  </li>
-                  <li className='inline-flex items-baseline justify-start gap-1'>
-                    <TbCheck className='text-lg text-yellow-400' />
-                    Make sure the right soil cultivation at the right time
-                  </li>
-                  <li className='inline-flex items-baseline justify-start gap-1'>
-                    <TbCheck className='text-lg text-yellow-400' />
-                    Keep and build good soil structure and soil fertility
-                  </li>
-                  <li className='inline-flex items-baseline justify-start gap-1'>
-                    <TbCheck className='text-lg text-yellow-400' />
-                    Control pests, diseases and weeds
-                  </li>
+                  {objectiveTranslations.map((objective, index) => (
+                    <li
+                      key={objective + index}
+                      className='inline-flex items-baseline justify-start gap-1'
+                    >
+                      <TbCheck className='text-lg text-yellow-400' />
+                      {objective}
+                    </li>
+                  ))}
                 </ul>
               </div>
 
@@ -66,7 +66,9 @@ const OrganicFarming = () => {
                   href='/about'
                   className='inline-flex items-center gap-2 px-8 py-3 text-sm font-medium transition bg-white border border-white rounded-full text-emerald-700 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-emarald-400'
                 >
-                  Learn more
+                  {/* Learn more */}
+                  {t("organic-farming.objectives.learn-more")}
+
                   <TbArrowRight />
                 </Link>
               </div>

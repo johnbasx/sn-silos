@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export const servicesData = [
   {
@@ -43,13 +44,21 @@ export const servicesData = [
 ];
 
 const IOTServices = () => {
+  const { t } = useTranslation("home");
+  const servicesTranslations = t("IOTServices.services-data", {
+    returnObjects: true,
+  });
   return (
     <section className='px-6 py-12 lg:py-32'>
       <div className='flex flex-col items-center justify-center max-w-3xl gap-2 mx-auto mb-12 text-center'>
         <h2 className='text-4xl font-bold text-black lg:text-5xl'>
-          Services we are offering
+          {/* Our Organic Products and Services */}
+          {t("IOTServices.heading")}
         </h2>
-        <p className='text-gray-500'>What we are doing and where we do</p>
+        <p className='text-gray-500'>
+          {/* What we are doing and where we do */}
+          {t("IOTServices.tagline")}
+        </p>
       </div>
       <div className='grid grid-cols-1 gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4 max-w-7xl'>
         {servicesData.map((item, index) => (
@@ -67,17 +76,24 @@ const IOTServices = () => {
             />
 
             <div className='relative p-8 drop-shadow'>
-              <p className='text-2xl font-semibold text-white'>{item.name}</p>
+              <p className='text-2xl font-semibold text-white'>
+                {/* {item.name} */}
+                {servicesTranslations[index].name}
+              </p>
 
               <div className='mt-64'>
                 <div className='transition-all duration-200 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100'>
-                  <p className='text-sm text-white'>{item.about}</p>
+                  <p className='text-sm text-white'>
+                    {/* {item.about} */}
+                    {servicesTranslations[index].about}
+                  </p>
                   <div className='mt-6 mb-3'>
                     <Link
                       href={item.link}
                       className='px-6 py-2 text-sm font-semibold rounded-md bg-gray-50 text-emerald-900'
                     >
-                      Check out
+                      {/* Check out */}
+                      {t("IOTServices.checkout")}
                     </Link>
                   </div>
                 </div>

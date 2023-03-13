@@ -1,5 +1,6 @@
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 import {
   TbCertificate,
   TbChartInfographic,
@@ -36,6 +37,11 @@ export const someDetailsData = [
   },
 ];
 const SomeDetail = () => {
+  const { t } = useTranslation("home");
+  const somDetailTranslations = t("some-detail", {
+    returnObjects: true,
+  });
+
   return (
     <section className='relative bg-simon-img'>
       <div className='absolute inset-0 w-full h-full bg-black opacity-50'></div>
@@ -43,12 +49,20 @@ const SomeDetail = () => {
         <div className='grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4'>
           {someDetailsData.map((item, index) => (
             <div
-              className='flex flex-col items-center justify-center gap-3 text-center text-white drop-shadow'
+              className='flex flex-col items-center justify-center gap-6 text-center text-white drop-shadow'
               key={"Some-detail-" + item.id}
             >
               <item.Icon className='w-16 h-16' />
-              <h4 className='text-lg font-semibold'>{item.name}</h4>
-              <p className='text-sm text-gray-200'>{item.about}</p>
+              <div className='flex flex-col gap-3'>
+                <h4 className='text-lg font-semibold'>
+                  {/* {item.name} */}
+                  {somDetailTranslations[index].name}
+                </h4>
+                <p className='text-sm text-gray-200'>
+                  {/* {item.about} */}
+                  {somDetailTranslations[index].about}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -3,6 +3,7 @@ import GetInTouch from "@/components/contact/GetInTouch";
 import Location from "@/components/contact/Location";
 import LookingForCareer from "@/components/contact/LookingForCareer";
 import Layout from "@/components/layout/Layout";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 const ContactPage = () => {
@@ -17,3 +18,9 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["contact", "common"])),
+  },
+});

@@ -1,5 +1,6 @@
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 import {
   Tb3DCubeSphere,
   TbChartDots2,
@@ -49,30 +50,38 @@ export const servicesOfferingData = [
 ];
 
 const ServicesWeAreOffering = () => {
+  const { t } = useTranslation("home");
+  const servicesOfferingTranslations = t(
+    "services-offering.services-offering-data",
+    { returnObjects: true }
+  );
   return (
     <div className='container px-6 mx-auto my-16 md:mb-32 max-w-7xl'>
       <div className='flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>
-          Our Soil Sense Technology
+          {/* Our Soil Sense Technology */}
+          {t("services-offering.heading")}
         </h2>
         <p className='text-gray-600'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
-          expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit.
+          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. */}
+          {t("services-offering.tagline")}
         </p>
       </div>
       <section className='grid grid-cols-1 gap-4 md:grid-cols-3'>
         <div className='flex items-start h-full col-span-1 py-8 text-left text-black rounded-lg lg:p-6 lg:pl-4 lg:text-left'>
           <div className='flex flex-col gap-6 lg:pl-12'>
             <h2 className='text-3xl font-bold lg:text-4xl'>
-              Soil Sense System Disease Control
+              {/* Soil Sense System Disease Control */}
+              {t("services-offering.topic")}
             </h2>
 
             <p>
-              Know exactly when, where, and what to apply, even the best time of
+              {/* Know exactly when, where, and what to apply, even the best time of
               day to spray. Save costs while you maximize protection with the
               most tested and reliable digital fungal disease management advisor
-              in the market.
+              in the market. */}
+              {t("services-offering.description")}
             </p>
           </div>
         </div>
@@ -84,9 +93,13 @@ const ServicesWeAreOffering = () => {
                 className='flex flex-col gap-3 p-4 bg-gray-50 rounded-2xl aspect-square'
               >
                 <item.Icon className='w-12 h-12 text-emerald-600' />
-                <h3 className='text-xl font-bold'>{item.name}</h3>
+                <h3 className='text-xl font-bold'>
+                  {/* {item.name} */}
+                  {servicesOfferingTranslations[idx].name}
+                </h3>
                 <p className='line-clamp-2 md:line-clamp-4 text-ellipsis'>
-                  {item.about}
+                  {/* {item.about} */}
+                  {servicesOfferingTranslations[idx].about}
                 </p>
               </div>
             ))}

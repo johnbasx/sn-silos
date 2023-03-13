@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export const offersData = [
   {
@@ -39,16 +40,21 @@ export const offersData = [
 ];
 
 const Offers = () => {
+  const { t } = useTranslation("home");
+  const offerTranslations = t("offers.offers-data", { returnObjects: true });
+
   return (
     <section className='px-6 py-20 lg:py-32 '>
       <div className='flex flex-col items-center justify-center max-w-3xl gap-2 mx-auto mb-12 text-center'>
         <h2 className='text-4xl font-bold text-black lg:text-5xl'>
-          Our offers
+          {/* Our offers */}
+          {t("offers.heading")}
         </h2>
         <p className='text-gray-500'>
-          We aim to become one of Indi&apos;s leading marketplace in the field
+          {/* We aim to become one of Indi&apos;s leading marketplace in the field
           of agriculture, real-estate and much more. Check out our various
-          offers
+          offers */}
+          {t("offers.description")}
         </p>
       </div>
       <div className='grid grid-cols-1 gap-4 mx-auto max-w-7xl lg:gap-6 md:grid-cols-2'>
@@ -65,18 +71,21 @@ const Offers = () => {
               className='absolute inset-0 object-cover w-full h-full -z-10'
             />
             <h3 className='text-xl font-bold text-white md:text-2xl drop-shadow'>
-              {item.title}
+              {/* {item.title} */}
+              {offerTranslations[index].title}
             </h3>
 
             <p className='max-w-xl mt-3 text-sm text-gray-300 line-clamp-2 md:line-clamp-4 drop-shadow'>
-              {item.about}
+              {/* {item.about} */}
+              {offerTranslations[index].about}
             </p>
             <div className='mt-6 mb-3'>
               <Link
                 href={item.link}
                 className='px-6 py-2.5 font-semibold rounded-md bg-gray-50 text-emerald-900 hover:bg-gray-100 duration-150'
               >
-                Check out
+                {/* Check out */}
+                {t("offers.checkout")}
               </Link>
             </div>
           </div>

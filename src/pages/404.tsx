@@ -1,3 +1,4 @@
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
@@ -117,3 +118,9 @@ const Custom404Page = () => {
   );
 };
 export default Custom404Page;
+
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["404", "common"])),
+  },
+});

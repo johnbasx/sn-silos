@@ -3,8 +3,11 @@ import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { HiShieldCheck } from "react-icons/hi";
+import { useTranslation } from "next-i18next";
 
 const TestimonialCard = ({ ...review }: ReviewsDataProps) => {
+  const { t } = useTranslation("home");
+
   return (
     <div key={review.id}>
       <div className='px-6 py-6 overflow-hidden bg-white border border-gray-200 shadow-sm rounded-2xl'>
@@ -29,7 +32,8 @@ const TestimonialCard = ({ ...review }: ReviewsDataProps) => {
         <div className='inline-flex items-center mt-6 space-x-1'>
           <HiShieldCheck className='text-gray-500' />
           <p className='text-sm font-medium leading-5 text-gray-500'>
-            Verified customer
+            {/* Verified customer */}
+            {t("testimonials.verified-customer")}
           </p>
         </div>
         <div className='space-y-1'>
