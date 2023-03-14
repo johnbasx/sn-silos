@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 
 // import FilterContext from "@/context/contextProvider";
-import { useTranslation } from "react-i18next";
-// import useTranslation from "next-translate/useTranslation";
+import { useTranslation } from "next-i18next";
 import useFilterStore from "@/store/FilterStore";
 import clsx from "clsx";
 
@@ -14,7 +13,8 @@ export type TabsProps = {
 const Tabs = ({ tabs, type }: TabsProps) => {
   const [tabType, setTabType] = useState("photo-tabs");
   const categoryCtx = useFilterStore();
-  const { t } = useTranslation("gallery");
+  const { t } = useTranslation("press");
+  const tabsTranslations = t("press", { returnObjects: true });
 
   useEffect(() => {
     if (type == "videos") {
@@ -50,7 +50,18 @@ const Tabs = ({ tabs, type }: TabsProps) => {
           // {tabs.find((tab) => categoryCtx.categorytoFilter == tab.name).name}
         >
           {tabs.map((tab, i) => (
-            <option key={tab.name}>{t(`gallery.${tabType}.${i}.name`)}</option>
+            <>
+              {tabType == "photo-tabs" && (
+                <option key={tab.name}>
+                  {tabsTranslations["photo-tabs"][i].name}
+                </option>
+              )}
+              {tabType == "video-tabs" && (
+                <option key={tab.name}>
+                  {tabsTranslations["video-tabs"][i].name}
+                </option>
+              )}
+            </>
           ))}
         </select>
       </div>
@@ -75,7 +86,13 @@ const Tabs = ({ tabs, type }: TabsProps) => {
                 categoryCtx.setFilter(tab.name);
               }}
             >
-              <span>{t(`gallery.${tabType}.${tabIdx}.name`)}</span>
+              {tabType == "photo-tabs" && (
+                <span>{tabsTranslations["photo-tabs"][tabIdx].name}</span>
+              )}
+              {tabType == "video-tabs" && (
+                <span>{tabsTranslations["video-tabs"][tabIdx].name}</span>
+              )}
+              {/* <span>{t(`press.${tabType}.${tabIdx}.name`)}</span> */}
               <span
                 aria-hidden='true'
                 className={clsx(

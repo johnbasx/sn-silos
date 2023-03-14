@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const HighQualityLand = () => {
+  const { t } = useTranslation("services");
+
   return (
     <section className='pt-20 overflow-hidden bg-emerald-900 lg:px-0 lg:py-0'>
       <div className='mx-auto'>
@@ -22,11 +25,12 @@ const HighQualityLand = () => {
           <div className='px-6 py-8 lg:order-2 bg-emerald-900 md:p-12 lg:px-8 lg:py-24'>
             <div className='mx-auto text-left lg:pl-20'>
               <h2 className='text-4xl font-bold text-white md:text-5xl'>
-                High Quality Land
+                {/* High Quality Land */}
+                {t("high-quality-land.heading")}
               </h2>
 
               <p className='max-w-lg mt-4 text-white/90'>
-                Land quality may be defined as the ability of the land to
+                {/* Land quality may be defined as the ability of the land to
                 perform specific functions without becoming degraded. It should
                 be noted that this definition contains an element of time as it
                 implies the sustainability of performance functions. This is a
@@ -40,7 +44,8 @@ const HighQualityLand = () => {
                 cultural practices conducive to sustainable land management. We
                 chose grain production because it is a decisive factor that
                 controls food security, which is emerging as a major
-                geopolitical issue.
+                geopolitical issue. */}
+                {t("high-quality-land.description")}
               </p>
 
               <div className='mt-8 md:mt-8'>
@@ -48,7 +53,8 @@ const HighQualityLand = () => {
                   href='/contact'
                   className='inline-block px-8 py-2.5 text-sm font-semibold transition bg-white border border-white rounded text-emerald-800 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400'
                 >
-                  Get Started Today
+                  {/* Get Started Today */}
+                  {t("get-started")}
                 </Link>
               </div>
             </div>

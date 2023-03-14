@@ -1,3 +1,157 @@
 {
-  "title": "Services Page"
+  "title": "Services - SN Silos | Land of Technology",
+  "land-description": {
+    "heading": "Land Description",
+    "tagline": " 87 Mausami Point Rd",
+    "description": " Real estate is real property that consists of land and improvements, which include buildings, fixtures, roads, structures, and utility systems. Property rights give a title of ownership to the land improvements, and natural resources such as minerals, plants, animals, water, etc.",
+    "get-started": "Get Started Today"
+  },
+  "land-plan": {
+    "heading": "Land",
+    "sub-heading": "Plan",
+    "description": "SN Silos has helped to create a marketplace to provide alll of the following services through internal operations in combination with our specialised partnership network.",
+    "get-started": "Get Started Today",
+    "land-plan-tabs": [
+      {
+        "name": "Studio",
+        "heading": "The Land Studio",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis."
+      },
+      {
+        "name": "Delux",
+        "heading": "The Arch love",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum quidem tempora vero perspiciatis provident necessitatibus nostrum qui, praesentium voluptates quo inventore debitis labore eveniet quae quaerat sint ullam laudantium."
+      },
+      {
+        "name": "Penthouse",
+        "heading": "Penthouse designs",
+        "about": "Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd minim veniam."
+      },
+      {
+        "name": "Top Garden",
+        "heading": "Rooftop Garden",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab dicta iste cumque ad consectetur, dignissimos nobis autem nostrum corrupti cum alias voluptate explicabo aliquam laborum at eos voluptas natus?"
+      },
+      {
+        "name": "Double Height",
+        "heading": "Ceiling Height",
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus est atque nihil dignissimos repellendus quaerat adipisci similique praesentium, eum sequi ex veritatis eaque vitae sunt excepturi soluta, maiores odio distinctio."
+      }
+    ]
+  },
+  "our-business-units": {
+    "heading": "Our Business Units",
+    "learn-more": "Learn More",
+    "sections": [
+      {
+        "name": "Soil Sense",
+        "tagline": "Major sustainability impact in agriculture farming",
+        "about": "There is a concentrated effort to modernize the agriculture industry, and data-driven weather intelligence is the key to sustainability. Managing the decision-making processes of farming has always been complex because there are so many different limiting factors that aren’t within a farmer’s control. The weather itself being chief among them."
+      },
+      {
+        "name": "Tech Land",
+        "tagline": "Costs and Energy savings for commercial properties",
+        "about": "TechLand is a concentrated effort to modernize the land buying and selling industry, and data-driven intelligence is the key to sustainability. Managing the decision-making processes of real-estate has always been complex because there are so many different limiting factors that aren’t within a somone's control. The uncertainity itself being chief among them."
+      },
+      {
+        "name": "Organic Chef",
+        "tagline": "Sustainability impact in agriculture products",
+        "about": "There is a concentrated effort to modernize the agriculture industry, and data-driven weather intelligence is the key to sustainability. Managing the decision-making processes of farming has always been complex because there are so many different limiting factors that aren’t within a farmer’s control. The weather itself being chief among them."
+      }
+    ]
+  },
+  "high-quality-land": {
+    "heading": "High Quality Land",
+    "description": "Land quality may be defined as the ability of the land to perform specific functions without becoming degraded. It should be noted that this definition contains an element of time as it implies the sustainability of performance functions. This is a marked departure from previous definitions, which consider land quality as a static attribute. Among the numerous functions that land must perform are to produce food and fiber, maintain or enhance water quality, support human habitation, partition water flow, and sequester carbon. For the purpose of the present study, we selected the function of the land to sustain grain production, which presumes that the land responds positively to cultural practices conducive to sustainable land management. We chose grain production because it is a decisive factor that controls food security, which is emerging as a major geopolitical issue.",
+    "get-started": "Get Started Today"
+  },
+  "organic-chef": {
+    "heading": "Organic Chef",
+    "description": "Organic Chef will help to bring the best agricultural products to your plate with the following services through internal operations in combination with our specialised partnership network.",
+    "cards": [
+      {
+        "name": "For Farmers",
+        "points": [
+          "Better value for your produce",
+          "Timely Elecronic Payments",
+          "Market Guidance"
+        ],
+        "link": "/contact",
+        "linkLabel": "Sell to us"
+      },
+      {
+        "name": "For Businesses",
+        "points": [
+          "Get fresh and better quality produce",
+          "Fair and transparent pricing",
+          "Convenient for business owners"
+        ],
+        "link": "/contact",
+        "linkLabel": "Buy from us"
+      },
+      {
+        "name": "For Consumers",
+
+        "points": [
+          "Get fresh and best quality produce",
+          "At farm rate prices",
+          "Traceable to source"
+        ],
+        "link": "/contact",
+        "linkLabel": "go to organicchef.com"
+      }
+    ]
+  },
+  "end-to-end-supply": {
+    "heading": "End to End supply chain",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "data": [
+      {
+        "heading": "Prodcurement Engine",
+        "tagline": "Farmer / Supplier App",
+        "points": [
+          {
+            "name": "Traceability",
+            "about": "In-house susyem has traceability to keep track of the source of the produce and its quality."
+          },
+          {
+            "name": "Transparency",
+            "about": "Farmers have complete transparency of their PO's and payments."
+          }
+        ]
+      },
+      {
+        "heading": "Advanced Reseller App",
+        "tagline": "Reseller App",
+        "points": [
+          {
+            "name": "AI & Social",
+            "about": "AI powered CRM enabling better communication with consumers."
+          },
+          {
+            "name": "Orders/Deliveries",
+            "about": "Track consumer orders and make deliveries fast and easy."
+          },
+          {
+            "name": "Incentive",
+            "about": "Earn incentive and bonuses on sales."
+          }
+        ]
+      },
+      {
+        "heading": "Retailer / Consumer App",
+        "tagline": "Retailer / Consumer App",
+        "points": [
+          {
+            "name": "Orders",
+            "about": "View catalogue, place orders and track deliveries."
+          },
+          {
+            "name": "Wallet",
+            "about": "Add money to your wallet for fast checkouts and offers."
+          }
+        ]
+      }
+    ]
+  }
 }

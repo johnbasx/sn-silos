@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import hnFlag from "../../../public/images/flag/hn-flag.svg";
 import enFlag from "../../../public/images/flag/en-flag.svg";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const LocaleSwitcher = ({ onClick }: { onClick: () => void }) => {
   const { t, i18n, ready } = useTranslation("common");

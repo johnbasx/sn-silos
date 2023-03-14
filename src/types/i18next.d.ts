@@ -1,13 +1,20 @@
 import "i18next";
-import type common from "../../public/locales/en/common.json";
-import type home from "../../public/locales/en/home.json";
-import type gallery from "../../public/locales/en/gallery.json";
-// import type gallery from '../../public/locales/en/gallery.json'
+import type common from "@public/locales/en/common.json";
+import type home from "@public/locales/en/home.json";
+import type services from "@public/locales/en/services.json";
+import type about from "@public/locales/en/about.json";
+import type career from "@public/locales/en/career.json";
+import type error from "@public/locales/en/error.json";
+import type press from "@public/locales/en/press.json";
 
 interface I18nNamespaces {
   common: typeof common;
   home: typeof home;
-  galery: typeof gallery;
+  services: typeof services;
+  about: typeof about;
+  career: typeof career;
+  error: typeof error;
+  press: typeof press;
 }
 
 declare module "i18next" {

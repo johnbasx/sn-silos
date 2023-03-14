@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { nanoid } from "nanoid";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export const landPlanTabs = [
   {
@@ -58,17 +59,28 @@ export const landPlanTabs = [
 
 const LandPlan = () => {
   const [openTab, setOpenTab] = React.useState(1);
+  const { t } = useTranslation("services");
+  const landPlanTranslations = t("land-plan.land-plan-tabs", {
+    returnObjects: true,
+  });
+
   return (
     <>
       <section className='px-6 py-20 overflow-hidden bg-white lg:px-0 lg:py-32'>
-        <div className='flex flex-col max-w-3xl gap-2 mx-auto text-left md:text-center'>
+        <div className='flex flex-col max-w-3xl gap-4 mx-auto text-left md:text-center'>
           <h2 className='text-4xl font-extrabold lg:text-5xl'>
-            Land <span className='text-emerald-500'>Plan</span>
+            {/* Land */}
+            {t("land-plan.heading")}{" "}
+            <span className='text-emerald-500'>
+              {/* Plan */}
+              {t("land-plan.sub-heading")}
+            </span>
           </h2>
           <p className='text-gray-600'>
-            SN Silos has helped to create a marketplace to provide alll of the
+            {/* SN Silos has helped to create a marketplace to provide alll of the
             following services through internal operations in combination with
-            our specialised partnership network.
+            our specialised partnership network. */}
+            {t("land-plan.description")}
           </p>
         </div>
         <div className='flex flex-wrap mx-auto max-w-7xl'>
@@ -97,7 +109,8 @@ const LandPlan = () => {
                     href={"#link" + tabItem.tabNo}
                     role='tablist'
                   >
-                    {tabItem.name}
+                    {/* {tabItem.name} */}
+                    {landPlanTranslations[idx].name}
                   </Link>
                 </li>
               ))}
@@ -116,11 +129,13 @@ const LandPlan = () => {
                           <div className='p-8 rounded-t-2xl md:rounded-none md:rounded-l-2xl bg-emerald-900 md:p-12 lg:px-16 lg:py-24'>
                             <div className='max-w-xl mx-auto text-left'>
                               <h2 className='text-2xl font-bold text-white md:text-3xl'>
-                                {tabItem.heading}
+                                {/* {tabItem.heading} */}
+                                {landPlanTranslations[idx].heading}
                               </h2>
 
                               <p className='mt-4 text-white/90'>
-                                {tabItem.about}
+                                {/* {tabItem.about} */}
+                                {landPlanTranslations[idx].about}
                               </p>
 
                               <div className='mt-4 md:mt-8'>
@@ -128,7 +143,8 @@ const LandPlan = () => {
                                   href='#!'
                                   className='inline-block px-8 py-2.5 text-sm font-semibold transition bg-white border border-white rounded text-emerald-800 hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400'
                                 >
-                                  Get Started Today
+                                  {/* Get Started Today */}
+                                  {t("land-plan.get-started")}
                                 </a>
                               </div>
                             </div>

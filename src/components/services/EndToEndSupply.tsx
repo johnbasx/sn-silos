@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
 import clsx from "clsx";
+import { useTranslation } from "next-i18next";
 
 export const endToEndSupplyData = [
   {
@@ -70,16 +71,22 @@ export const endToEndSupplyData = [
 ];
 
 const EndToEndSupply = () => {
+  const { t } = useTranslation("services");
+  const endToEndTranslations = t("end-to-end-supply.data", {
+    returnObjects: true,
+  });
   return (
     <div className='container px-6 mx-auto my-16 max-w-7xl'>
       <div className='flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>
-          End to End supply chain
+          {/* End to End supply chain */}
+          {t("end-to-end-supply.heading")}
         </h2>
         <p className='text-gray-600'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
+          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
           expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit.
+          consectetur adipisicing elit. */}
+          {t("end-to-end-supply.description")}
         </p>
       </div>
       {endToEndSupplyData.map((item, index) => (
@@ -111,16 +118,25 @@ const EndToEndSupply = () => {
               <div className='flex items-center h-full py-8 text-left text-black rounded-lg lg:p-6 lg:pl-12 lg:text-left'>
                 <div className='flex flex-col gap-3 lg:pl-12'>
                   <h2 className='text-2xl font-bold lg:text-3xl'>
-                    {item.heading}
+                    {/* {item.heading} */}
+                    {endToEndTranslations[index].heading}
                   </h2>
                   <span className='font-semibold tracking-wider uppercase text-emerald-500'>
-                    {item.tagline}
+                    {/* {item.tagline} */}
+                    {endToEndTranslations[index].tagline}
                   </span>
                   <ul className=''>
                     {item.points.map((point, idx) => (
                       <li key={point.id}>
-                        <span className='font-bold'>{point.name}</span> :
-                        <span> {point.about}</span>
+                        <span className='font-bold'>
+                          {/* {point.name} */}
+                          {endToEndTranslations[index].points[idx].name}
+                        </span>{" "}
+                        :
+                        <span>
+                          {/* {point.about} */}
+                          {endToEndTranslations[index].points[idx].about}
+                        </span>
                       </li>
                     ))}
                   </ul>

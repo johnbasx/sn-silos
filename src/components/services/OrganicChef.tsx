@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import Image from "next/image";
 import Link from "next/link";
 import { TbArrowRight, TbCheck, TbPin } from "react-icons/tb";
+import { useTranslation } from "next-i18next";
 
 export const organicChefCardsData = [
   {
@@ -47,15 +48,22 @@ export const organicChefCardsData = [
 ];
 
 const OrganicChef = () => {
+  const { t } = useTranslation("services");
+  const organicCardTranslations = t("organic-chef.cards", {
+    returnObjects: true,
+  });
+
   return (
     <section className='px-6 py-24 lg:py-32 lg:px-0'>
       <div className='mx-auto max-w-7xl'>
         <div className='flex flex-col max-w-3xl gap-2 mx-auto text-left md:text-center'>
-          <h2 className='text-4xl font-extrabold lg:text-5xl'>Organic Chef</h2>
+          <h2 className='text-4xl font-extrabold lg:text-5xl'>
+            {/* Organic Chef */}
+          </h2>
           <p className='text-gray-600'>
-            Organic Chef will help to bring the best agricultural products to
+            {/* Organic Chef will help to bring the best agricultural products to
             your plate with the following services through internal operations
-            in combination with our specialised partnership network.
+            in combination with our specialised partnership network. */}
           </p>
         </div>
         <div className='grid grid-cols-1 gap-4 mt-6 lg:grid-cols-3'>
@@ -75,7 +83,8 @@ const OrganicChef = () => {
 
               <div className='p-6 text-sm'>
                 <span className='px-2 py-1.5 text-sm font-semibold rounded-full bg-orange-300/20 text-orange-600/90'>
-                  {item.name}
+                  {/* {item.name} */}
+                  {organicCardTranslations[idx].name}
                 </span>
                 <ul className='grid grid-cols-1 gap-3 mt-6'>
                   {item.points.map((point, index) => (
@@ -86,7 +95,8 @@ const OrganicChef = () => {
                       <span className='flex items-center justify-center w-5 h-5 font-semibold rounded-full bg-emerald-600/20'>
                         <TbCheck className='text-emerald-900/75' />
                       </span>
-                      {point}
+                      {/* {point} */}
+                      {organicCardTranslations[idx].points[index]}
                     </li>
                   ))}
                 </ul>
@@ -96,7 +106,9 @@ const OrganicChef = () => {
                     href={item.link}
                     className='inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold text-center text-white duration-150 rounded-md bg-emerald-600 hover:bg-emerald-700'
                   >
-                    {item.linkLabel}
+                    {/* {item.linkLabel} */}
+                    {organicCardTranslations[idx].linkLabel}
+
                     <TbArrowRight />
                   </Link>
                 </div>

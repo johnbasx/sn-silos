@@ -11,12 +11,13 @@ import Image from "next/image";
 import QuickView from "./QuickView";
 import { Tab } from "@headlessui/react";
 import Tabs from "./Tabs";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import useFilterStore from "@/store/FilterStore";
 import clsx from "clsx";
 
-const Gallery = () => {
-  const { t } = useTranslation("gallery");
+const Press = () => {
+  const { t } = useTranslation("press");
+  const pressTabsTranslations = t("press.tab-items", { returnObjects: true });
 
   const [open, setOpen] = useState(false);
   const [imageView, setImageView] = useState("");
@@ -33,7 +34,7 @@ const Gallery = () => {
             <div>
               <div className='flex flex-col w-full'>
                 <h1 className='text-5xl font-extrabold text-center lg:text-6xl 2xl:text-7xl'>
-                  <span className='text-black'>Gallery & Blogs</span>
+                  <span className='text-black'>Press & Blogs</span>
                 </h1>
 
                 <p className='max-w-3xl mx-auto my-3 text-center text-gray-800 md:text-lg'>
@@ -55,7 +56,7 @@ const Gallery = () => {
                       )
                     }
                   >
-                    {t(`gallery.tab-items.${i}.name`)}
+                    {pressTabsTranslations[i].name}
                   </Tab>
                 ))}
               </Tab.List>
@@ -180,4 +181,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Press;

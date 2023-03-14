@@ -1,4 +1,3 @@
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HeroSection from "@/components/home/hero-section/HeroSection";
 import Deals from "@/components/home/Deals";
@@ -15,6 +14,8 @@ import Partners from "@/components/home/Partners";
 import Layout from "@/components/layout/Layout";
 import ServicesWeAreOffering from "@/components/services/ServicesWeAreOffering";
 import HowWeWorkTimeline from "@/components/services/HowWeWorkTimeline";
+
+import { useTranslation } from "next-i18next";
 
 const HomePage = () => {
   const { t } = useTranslation(["home", "common"]);

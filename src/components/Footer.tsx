@@ -183,7 +183,10 @@ const Footer = () => {
           <div className='grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left'>
             {footerLinks.map((item, idx) => (
               <div key={"footer-item-" + idx + item.id}>
-                <h4 className='font-semibold text-white'>{item.category}</h4>
+                <h4 className='font-semibold text-white'>
+                  {/* {item.category} */}
+                  {footerTranslations[idx].category}
+                </h4>
 
                 <nav
                   aria-label='Footer Services Nav'

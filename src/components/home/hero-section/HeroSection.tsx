@@ -13,7 +13,7 @@ import soilSenseIcon from "@public/images/logo/soilsense.png";
 import techLandIcon from "@public/images/logo/techland.png";
 import organicChefIcon from "@public/images/logo/organicchef.png";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 export const headerCardsData = [
   {

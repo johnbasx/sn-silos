@@ -5,8 +5,11 @@ import SingleBlogPost from "@/components/press/SingleBlogPost";
 import Tabs from "@/components/press/Tabs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const PressPage = () => {
+  const { t } = useTranslation(["common", "press"]);
+
   return (
     <Layout title='Press & Gallery - SN Silos | Land of Technlogy'>
       <Gallery />

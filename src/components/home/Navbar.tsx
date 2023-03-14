@@ -5,24 +5,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Fragment, useState } from "react";
-import { useTranslation } from "next-i18next";
+
 import { HiBars3, HiPhone, HiXMark } from "react-icons/hi2";
 import LocaleSwitcher from "../layout/LocaleSwitcher";
+import { useTranslation } from "next-i18next";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
-  const { t, i18n, ready } = useTranslation("common");
-  const navTrans = t("navigation", { returnObjects: true });
-
-  if (!ready)
-    return (
-      <>
-        <p>loading translations...</p>
-      </>
-    );
-  // console.log(navTrans);
+  const { t } = useTranslation("common");
+  const navigationTranslations = t("navigation", { returnObjects: true });
 
   return (
     <div className='bg-white isolate'>
@@ -57,7 +50,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className='hidden lg:flex lg:gap-x-12'>
-            {navTrans.map((item, idx) => (
+            {navigation.map((item, idx) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -68,7 +61,8 @@ const Navbar = () => {
                     : "text-gray-900"
                 )}
               >
-                {item.name}
+                {/* {item.name} */}
+                {navigationTranslations[idx].name}
                 {/* {t(`navigation.${idx}.name`)} */}
               </Link>
             ))}
@@ -125,20 +119,18 @@ const Navbar = () => {
               <div className='flow-root mt-6'>
                 <div className='-my-6 divide-y divide-gray-500/10'>
                   <div className='py-6 space-y-2'>
-                    {navTrans.map((item, idx) => (
+                    {navigation.map((item, idx) => (
                       <Link
                         key={item.name}
                         href={item.href}
+                        onClick={() => setMobileMenuOpen(false)}
                         className={clsx(
                           "block px-3 py-2 -mx-3 text-base font-semibold duration-150 leading-7 rounded-lg text-gray-50 hover:bg-emerald-400/10",
                           currentRoute === item.href ? "bg-emerald-400/10" : ""
                         )}
                       >
-                        {item.name}
-                        {/* {t(`navigation.${idx}.name`)} */}
-
-                        {/* @ts-ignore */}
-                        {/* {t(`navigation.${idx}.name`)} */}
+                        {/* {item.name} */}
+                        {navigationTranslations[idx].name}
                       </Link>
                     ))}
                   </div>

@@ -1,12 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const OurBusinessUnits = () => {
+  const { t } = useTranslation("services");
+  const unitsSectionsTranslations = t("our-business-units.sections", {
+    returnObjects: true,
+  });
   return (
     <section className='px-6 py-12 overflow-hidden bg-gradient-to-br to-transparent from-gray-50 lg:px-0 lg:py-24'>
       <div className='flex flex-col gap-2 text-left md:text-center'>
-        <h2 className='text-4xl font-bold lg:text-5xl'>Our Business Units</h2>
+        <h2 className='text-4xl font-bold lg:text-5xl'>
+          {/* Our Business Units */}
+          {t("our-business-units.heading")}
+        </h2>
       </div>
       {/* Soil Sense Unit */}
       <article className='mx-auto md:py-8 sm:grid sm:grid-cols-2 max-w-7xl sm:items-center'>
@@ -20,19 +28,22 @@ const OurBusinessUnits = () => {
               height={100}
             />
             <h2 className='mt-4 text-2xl font-bold text-gray-900 md:text-3xl'>
-              Soil Sense
+              {/* Soil Sense */}
+              {unitsSectionsTranslations[0].name}
             </h2>
 
             <p className='mt-2 font-medium text-gray-700'>
-              Major sustainability impact in agriculture farming
+              {/* Major sustainability impact in agriculture farming */}
+              {unitsSectionsTranslations[0].tagline}
             </p>
             <p className='mt-4 text-gray-500 md:'>
-              There is a concentrated effort to modernize the agriculture
+              {/* There is a concentrated effort to modernize the agriculture
               industry, and data-driven weather intelligence is the key to
               sustainability. Managing the decision-making processes of farming
               has always been complex because there are so many different
               limiting factors that aren’t within a farmer’s control. The
-              weather itself being chief among them.
+              weather itself being chief among them. */}
+              {unitsSectionsTranslations[0].about}
             </p>
 
             <div className='mt-4 md:mt-8'>
@@ -40,7 +51,8 @@ const OurBusinessUnits = () => {
                 href='#!'
                 className='inline-block px-12 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
               >
-                Learn More
+                {/* Learn More */}
+                {t("our-business-units.learn-more")}
               </a>
             </div>
           </div>
@@ -67,19 +79,22 @@ const OurBusinessUnits = () => {
               height={100}
             />
             <h2 className='mt-4 text-2xl font-bold text-gray-900 md:text-3xl'>
-              Tech Land
+              {/* Tech Land */}
+              {unitsSectionsTranslations[1].name}
             </h2>
 
             <p className='mt-2 font-medium text-gray-700'>
-              Costs and Energy savings for commercial properties
+              {/* Costs and Energy savings for commercial properties */}
+              {unitsSectionsTranslations[1].tagline}
             </p>
             <p className='mt-4 text-gray-500 md:'>
-              TechLand is a concentrated effort to modernize the land buying and
+              {/* TechLand is a concentrated effort to modernize the land buying and
               selling industry, and data-driven intelligence is the key to
               sustainability. Managing the decision-making processes of
               real-estate has always been complex because there are so many
               different limiting factors that aren’t within a somone&apos;s
-              control. The uncertainity itself being chief among them.
+              control. The uncertainity itself being chief among them. */}
+              {unitsSectionsTranslations[1].about}
             </p>
 
             <div className='mt-4 md:mt-8'>
@@ -87,7 +102,8 @@ const OurBusinessUnits = () => {
                 href='/about'
                 className='inline-block px-12 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
               >
-                Learn More
+                {/* Learn More */}
+                {t("our-business-units.learn-more")}
               </Link>
             </div>
           </div>
@@ -114,19 +130,22 @@ const OurBusinessUnits = () => {
               height={100}
             />
             <h2 className='mt-4 text-2xl font-bold text-gray-900 md:text-3xl'>
-              Organic Chef
+              {/* Organic Chef */}
+              {unitsSectionsTranslations[2].name}
             </h2>
 
             <p className='mt-2 font-medium text-gray-700'>
-              Major sustainability impact in agriculture farming
+              {/* Major sustainability impact in agriculture farming */}
+              {unitsSectionsTranslations[2].tagline}
             </p>
             <p className='mt-4 text-gray-500 md:'>
-              There is a concentrated effort to modernize the agriculture
+              {/* There is a concentrated effort to modernize the agriculture
               industry, and data-driven weather intelligence is the key to
               sustainability. Managing the decision-making processes of farming
               has always been complex because there are so many different
               limiting factors that aren’t within a farmer’s control. The
-              weather itself being chief among them.
+              weather itself being chief among them. */}
+              {unitsSectionsTranslations[2].about}
             </p>
 
             <div className='mt-4 md:mt-8'>
@@ -134,7 +153,8 @@ const OurBusinessUnits = () => {
                 href='#!'
                 className='inline-block px-12 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
               >
-                Learn More
+                {/* Learn More */}
+                {t("our-business-units.learn-more")}
               </a>
             </div>
           </div>

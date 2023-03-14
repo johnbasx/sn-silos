@@ -14,10 +14,10 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 
 const ServicesPage = () => {
-  const { t } = useTranslation(["home", "common"]);
+  const { t } = useTranslation(["common", "services"]);
 
   return (
-    <Layout title='Services - SN Silos | Land of Technlogy'>
+    <Layout title={t("services:title")}>
       <LandDescription />
       <LandPlan />
       <OurBusinessUnits />
@@ -37,6 +37,6 @@ export default ServicesPage;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["home", "common"])),
+    ...(await serverSideTranslations(locale, ["services", "common"])),
   },
 });

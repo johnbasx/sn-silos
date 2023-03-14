@@ -1,25 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const LandDescription = () => {
+  const { t } = useTranslation("services");
+
   return (
     <section className='overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2'>
       <div className='p-6 py-20 md:p-12 lg:px-16 max-w-7xl lg:py-32'>
         <div className='max-w-lg mx-auto text-center lg:pl-16 sm:text-left'>
           <h2 className='text-4xl font-bold text-gray-900 md:text-5xl'>
-            Land Description
+            {/* Land Description */}
+            {t("land-description.heading")}
           </h2>
           <h3 className='mt-3 text-2xl font-bold text-gray-900 md:text-3xl'>
-            87 Mausami Point Rd
+            {/* 87 Mausami Point Rd */}
+            {t("land-description.tagline")}
           </h3>
 
           <p className='mt-4 text-gray-500 md:block'>
-            Real estate is real property that consists of land and improvements,
+            {/* Real estate is real property that consists of land and improvements,
             which include buildings, fixtures, roads, structures, and utility
             systems. Property rights give a title of ownership to the land,
             improvements, and natural resources such as minerals, plants,
-            animals, water, etc
+            animals, water, etc. */}
+            {t("land-description.description")}
           </p>
 
           <div className='mt-8'>
@@ -27,7 +33,8 @@ const LandDescription = () => {
               href='#!'
               className='inline-block px-8 py-3 text-sm font-semibold text-white transition rounded-md bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400'
             >
-              Get Started Today
+              {/* Get Started Today */}
+              {t("land-description.get-started")}
             </Link>
           </div>
         </div>
