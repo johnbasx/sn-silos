@@ -1,5 +1,6 @@
 {
   "title": "Services - SN Silos | Land of Technology",
+  "get-started": "Get Started Today",
   "land-description": {
     "heading": "Land Description",
     "tagline": " 87 Mausami Point Rd",
@@ -151,6 +152,33 @@
             "about": "Add money to your wallet for fast checkouts and offers."
           }
         ]
+      }
+    ]
+  },
+  "our-solutions": {
+    "heading": "Our ",
+    "sub-heading": "Solutions",
+    "description": "SN Silos has helped to create a marketplace to provide alll of the following services through internal operations in combination with our specialised partnership network."
+  },
+  "disease-control": {
+    "heading": "Disease Control",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,consectetur adipisicing elit.",
+    "disease-control-data": [
+      {
+        "heading": "Optimize Spray Timing",
+        "about": "The most effective way to manage plant disease is by prevention. Know exactly where, what and when to spray, even down to the best time of day. Save costs on chemicals and spraying while you maximize protection."
+      },
+      {
+        "heading": "Reduce Chemical Use",
+        "about": "The system calculates a dynamic, daily infection risk that takes into account conditions for fungal growth, plant growth, crop type, and previous crop protection applications. The system also recommends the day and time to minimize environmental loss."
+      },
+      {
+        "heading": "Prevent Disease Outbreak",
+        "about": "At the end of the growing season, you can review your plant protection activities. This allows you to evaluate the effectiveness of your spraying for future seasons."
+      },
+      {
+        "heading": "Research & Validation",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis in optio excepturi iusto quos iste, voluptatibus unde odit quo nulla commodi eius impedit provident fugiat quae atque! Amet, vel?"
       }
     ]
   }

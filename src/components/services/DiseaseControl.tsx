@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 
 export const diseaseControlData = [
   {
@@ -31,16 +32,25 @@ export const diseaseControlData = [
 ];
 
 const DiseaseControl = () => {
+  const { t } = useTranslation("services");
+  const diseaseDataTranslations = t("disease-control.disease-control-data", {
+    returnObjects: true,
+  });
+
   return (
     <>
       <div className='pt-12 lg:pt-32 bg-gray-50'>
         <div className='px-6 mx-auto max-w-7xl'>
           <div className='flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center'>
-            <h2 className='text-4xl font-bold lg:text-5xl'>Disease Control</h2>
+            <h2 className='text-4xl font-bold lg:text-5xl'>
+              {/* Disease Control */}
+              {t("disease-control.heading")}
+            </h2>
             <p className='text-gray-700'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+              {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
               a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit.
+              consectetur adipisicing elit. */}
+              {t("disease-control.description")}
             </p>
           </div>
           <article>
@@ -73,10 +83,14 @@ const DiseaseControl = () => {
                     <div className='flex items-center h-full py-8 text-left text-black rounded-lg lg:p-6 lg:pl-12 lg:text-left'>
                       <div className='flex flex-col gap-3 lg:pl-12'>
                         <h2 className='text-2xl font-bold lg:text-3xl'>
-                          {item.heading}
+                          {/* {item.heading} */}
+                          {diseaseDataTranslations[index].heading}
                         </h2>
 
-                        <p>{item.about}</p>
+                        <p>
+                          {/* {item.about} */}
+                          {diseaseDataTranslations[index].about}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -105,13 +119,15 @@ const DiseaseControl = () => {
               <div className='flex items-center h-full py-8 text-left text-white rounded-lg lg:p-6 lg:pl-12 lg:text-left'>
                 <div className='flex flex-col gap-3 lg:pl-12'>
                   <h2 className='text-2xl font-bold lg:text-3xl'>
-                    Research & Validation
+                    {/* Research & Validation */}
+                    {diseaseDataTranslations[3].heading}
                   </h2>
                   <p className='text-gray-100'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fuga debitis in optio excepturi iusto quos iste,
                     voluptatibus unde odit quo nulla commodi eius impedit
-                    provident fugiat quae atque! Amet, vel?
+                    provident fugiat quae atque! Amet, vel? */}
+                    {diseaseDataTranslations[3].about}
                   </p>
                 </div>
               </div>
