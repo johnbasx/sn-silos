@@ -8,8 +8,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
 const AboutPage = () => {
+  const { t } = useTranslation("about");
   return (
-    <Layout title='About - SN Silos | Land of Technlogy'>
+    <Layout title={t("title")}>
       <AboutHero />
       <OurVision />
       <OurJourney />

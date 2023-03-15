@@ -3,6 +3,7 @@ import React from "react";
 import { nanoid } from "nanoid";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { useTranslation } from "next-i18next";
 
 export const teamData = [
   {
@@ -28,18 +29,22 @@ export const teamData = [
 ];
 
 const Team = () => {
+  const { t } = useTranslation("about");
+
   return (
     <div className='flex flex-col my-12'>
       <div className='container px-4 mx-auto max-w-7xl'>
         <div className='flex flex-wrap justify-center mb-12 text-center'>
           <div className='w-full px-4 lg:w-6/12'>
             <h1 className='mb-4 text-4xl font-bold text-gray-900 md:text-5xl'>
-              Meet Our Team
+              {/* Meet Our Team */}
+              {t("team.heading")}
             </h1>
 
             <p className='text-lg text-gray-700'>
-              With over 100 years of combined experience, we&apos;ve got a
-              well-seasoned team at the helm.
+              {/* With over 100 years of combined experience, we&apos;ve got a
+              well-seasoned team at the helm. */}
+              {t("team.description")}
             </p>
           </div>
         </div>

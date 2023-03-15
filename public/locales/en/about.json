@@ -1,3 +1,49 @@
 {
-  "title": "About Page"
+  "title": "About - SN Silos - Land of Technology",
+  "about-hero": {
+    "heading": "About SN Silos",
+    "description": "SN Silos and SoilSense collects soil and environment data around the farm and transforms it into useful information with the help of IoT based devices and sensors to monitor the soil health (crop field). The information is easy to access and provides a wide sense of field conditions",
+    "links": [
+      { "name": "Career roles", "href": "/career" },
+      { "name": "Internship programs", "href": "/career" },
+      { "name": "Our vision", "href": "/press" },
+      { "name": "Meet our leadership", "href": "/press" }
+    ],
+    "stats": [
+      { "name": "Clients worldwide", "value": "89,897" },
+      { "name": "Full-time employees", "value": "50+" },
+      { "name": "Stores", "value": "200+" },
+      { "name": "Hirings", "value": "100+" }
+    ]
+  },
+  "our-vision": {
+    "heading": "What we aim to provide",
+    "description": "IoT based devices and sensors to monitor the soil health (crop field). The information is easy to access and provides a wide sense of field conditions.",
+    "data": [
+      {
+        "name": "Our Vision",
+        "about": "To make a sustainable future in agriculture Industry with the right inclusion of technology and innovation"
+      },
+      {
+        "name": "Our Mission",
+        "about": "To provide a cost effective method to increase the yeild with the help of organic means and technology"
+      },
+      {
+        "name": "Our Future",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla necessitatibus voluptates praesentium quas maiores aspernatur voluptate sequi enim eveniet illo id ut natus, dolores cumque hic alias est facilis?"
+      },
+      {
+        "name": "Our Drive",
+        "about": "Sequi enim eveniet illo id ut natus, dolores cumque hic alias est facilis. aspernatur voluptate sequi enim eveniet illo id ut natus, dolores cumque hic alias est facili"
+      }
+    ]
+  },
+  "our-journey": {
+    "heading": "Our Journey",
+    "description": "Let's have an insight look to ths journey we had over the years to reach this point."
+  },
+  "team": {
+    "heading": "Meet Our Team",
+    "description": "With over 40+ years of combined experience, we've got a well-seasoned team at the helm."
+  }
 }
