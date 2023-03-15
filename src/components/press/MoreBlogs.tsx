@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { nanoid } from "nanoid";
+import { useTranslation } from "next-i18next";
 
 export const moreBlogsData = [
   {
@@ -74,11 +75,16 @@ export const moreBlogsData = [
 ];
 
 const MoreBlogs = () => {
+  const { t } = useTranslation("press");
+  const blogDataTranslations = t("more-blogs.blog-data", {
+    returnObjects: true,
+  });
   return (
     <section className='bg-white'>
       <div className='px-6 py-10 pb-16 mx-auto max-w-7xl md:pb-32'>
         <h1 className='text-4xl font-bold text-gray-800 capitalize lg:text-5xl'>
-          Precise agriculture includes
+          {/* Precise agriculture includes */}
+          {t("more-blogs.heading")}
         </h1>
 
         <div className='grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2'>
@@ -94,21 +100,28 @@ const MoreBlogs = () => {
 
               <div className='flex flex-col justify-start gap-2 py-6 md:pt-0 lg:mx-6'>
                 <p className='text-sm font-semibold tracking-wide uppercase text-emerald-600'>
-                  {blog.category}
+                  {/* {blog.category} */}
+                  {blogDataTranslations[idx].category}
                 </p>
                 <a
                   href='#!'
                   className='text-xl font-semibold text-gray-800 transition-all duration-200 hover:underline hover:text-emerald-600'
                 >
-                  {blog.headline}
+                  {/* {blog.headline} */}
+                  {blogDataTranslations[idx].headline}
                 </a>
                 <span className='mt-4 font-medium text-gray-500'>
-                  {blog.author}
+                  {/* {blog.author} */}
+                  {blogDataTranslations[idx].author}
+
                   <br />
-                  {blog.designation}
+                  {/* {blog.designation} */}
+                  {blogDataTranslations[idx].designation}
                 </span>
                 <span className='text-xs text-gray-500'>
-                  Published on: {blog.date}
+                  {t("more-blogs.published-on")}
+                  {/* {blog.date} */}
+                  {blogDataTranslations[idx].date}
                 </span>
               </div>
             </div>

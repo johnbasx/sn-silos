@@ -1,7 +1,8 @@
 {
-  "press": {
-    "main": "Press",
-    "subheading": "Get the power of customization you need to manage your transactions, payments and business",
+  "title": "Press & Gallery - SN Silos | Land of Technlogy",
+  "gallery": {
+    "heading": "Press & Blogs",
+    "sub-heading": "Get the power of customization in your farm based on IoT, Satellite imaging and Machine Learning",
     "tab-items": [
       { "id": 1, "name": "Photos" },
       { "id": 2, "name": "Videos" }
@@ -20,6 +21,99 @@
       { "name": "Soil Sense", "href": "#!", "current": false },
       { "name": "SN Silos", "href": "#!", "current": false },
       { "name": "Organic Chef", "href": "#!", "current": false }
+    ]
+  },
+  "single-blog-post": {
+    "heading": "Our Soil Sense kit contains",
+    "description": "Let's have a lokk at our various technologies to support farmers in monitoring their yield and farms",
+    "blog-data": [
+      {
+        "author": "Manish Soni",
+        "designation": "Lead Developer",
+        "headline": "Electrical Conductivity sensor",
+        "category": "Electrical Sensor",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam eos temporibus, quam ab perferendis quae beatae adipisci, impedit rem mollitia sunt facilis vitae dolores assumenda nobis vel odit voluptates."
+      },
+      {
+        "author": "Manish Soni",
+        "designation": "Lead Developer",
+        "headline": "Sensor to detect Ph level of soil",
+        "category": "Ph sensor",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam eos temporibus, quam ab perferendis quae beatae adipisci, impedit rem mollitia sunt facilis vitae dolores assumenda nobis vel odit voluptates."
+      },
+      {
+        "author": "Pravish Soni",
+        "designation": "Junior Developer",
+        "headline": "NPK sensor",
+        "category": "Premium Collection",
+
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam eos temporibus, quam ab perferendis quae beatae adipisci, impedit rem mollitia sunt facilis vitae dolores assumenda nobis vel odit voluptates."
+      },
+      {
+        "author": "Himanshu Soni",
+        "designation": "Senior App Developer",
+        "headline": "Moisture sensor",
+        "category": "Premium Kits",
+
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam eos temporibus, quam ab perferendis quae beatae adipisci, impedit rem mollitia sunt facilis vitae dolores assumenda nobis vel odit voluptates."
+      },
+      {
+        "author": "Himanshu Soni",
+        "designation": "Senior App Developer",
+        "headline": "Temerature & Humidity sensor",
+        "category": "Premium Kits",
+
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam eos temporibus, quam ab perferendis quae beatae adipisci, impedit rem mollitia sunt facilis vitae dolores assumenda nobis vel odit voluptates."
+      }
+    ]
+  },
+  "more-blogs": {
+    "heading": "Precise agriculture includes",
+    "published-on": "Published on : ",
+    "blog-data": [
+      {
+        "author": "Himanshu Soni",
+        "date": "25 November 2023",
+        "designation": "Senior App Developer",
+        "headline": "Smart Irrigation",
+        "category": "SN Silos"
+      },
+
+      {
+        "author": "Raj Soni",
+        "date": "5 October 2023",
+        "designation": "Junior App Developer",
+        "headline": "Drones and robots",
+        "category": "Soil Sense"
+      },
+      {
+        "author": "Ashish Soni",
+        "date": "13 November 2023",
+        "designation": "Chief Technician",
+        "headline": "Soil Health monitoring",
+        "category": "Organic Chef"
+      },
+      {
+        "author": "Ashish Soni",
+        "date": "13 November 2023",
+        "designation": "Disease Forecasting",
+        "headline": "How to deal with insects in farms and not to use pesticides",
+        "category": "Soil Sense"
+      },
+      {
+        "author": "Ashish Soni",
+        "date": "13 November 2023",
+        "designation": "Chief Technician",
+        "headline": "Remote Farming",
+        "category": "Soil Sense"
+      },
+      {
+        "author": "Pranav Soni",
+        "date": "19 December 2023",
+        "designation": "Chief Officer",
+        "headline": "How to yield more produce in a year?",
+        "category": "Soil Sense"
+      }
     ]
   }
 }

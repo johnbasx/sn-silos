@@ -14,7 +14,7 @@ const Tabs = ({ tabs, type }: TabsProps) => {
   const [tabType, setTabType] = useState("photo-tabs");
   const categoryCtx = useFilterStore();
   const { t } = useTranslation("press");
-  const tabsTranslations = t("press", { returnObjects: true });
+  const tabsTranslations = t("gallery", { returnObjects: true });
 
   useEffect(() => {
     if (type == "videos") {

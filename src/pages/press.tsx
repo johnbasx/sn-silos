@@ -8,10 +8,10 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 
 const PressPage = () => {
-  const { t } = useTranslation(["common", "press"]);
+  const { t } = useTranslation("press");
 
   return (
-    <Layout title='Press & Gallery - SN Silos | Land of Technlogy'>
+    <Layout title={t("title")}>
       <Gallery />
       <SingleBlogPost />
       <MoreBlogs />
@@ -23,6 +23,6 @@ export default PressPage;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["press"])),
+    ...(await serverSideTranslations(locale, ["press", "common"])),
   },
 });

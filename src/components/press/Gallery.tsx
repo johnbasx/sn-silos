@@ -17,7 +17,7 @@ import clsx from "clsx";
 
 const Press = () => {
   const { t } = useTranslation("press");
-  const pressTabsTranslations = t("press.tab-items", { returnObjects: true });
+  const pressTabsTranslations = t("gallery.tab-items", { returnObjects: true });
 
   const [open, setOpen] = useState(false);
   const [imageView, setImageView] = useState("");
@@ -34,12 +34,16 @@ const Press = () => {
             <div>
               <div className='flex flex-col w-full'>
                 <h1 className='text-5xl font-extrabold text-center lg:text-6xl 2xl:text-7xl'>
-                  <span className='text-black'>Press & Blogs</span>
+                  <span className='text-black'>
+                    {/* Press & Blogs */}
+                    {t("gallery.heading")}
+                  </span>
                 </h1>
 
                 <p className='max-w-3xl mx-auto my-3 text-center text-gray-800 md:text-lg'>
-                  Get the power of customization in your farm based on IoT,
-                  Satellite imaging and Machine Learning.
+                  {/* Get the power of customization in your farm based on IoT,
+                  Satellite imaging and Machine Learning. */}
+                  {t("gallery.sub-heading")}
                 </p>
               </div>
               <Tab.List className='relative flex self-center w-full gap-4 mt-4 rounded-lg'>
