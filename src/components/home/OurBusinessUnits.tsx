@@ -9,7 +9,7 @@ const OurBusinessUnits = () => {
     returnObjects: true,
   });
   return (
-    <section className='px-6 py-12 overflow-hidden bg-gradient-to-br to-transparent from-gray-50 lg:px-0 lg:py-24'>
+    <section className='px-6 py-12 overflow-hidden bg-gradient-to-br to-transparent from-white lg:px-0 lg:py-24'>
       <div className='flex flex-col gap-2 text-left md:text-center'>
         <h2 className='text-4xl font-bold lg:text-5xl'>
           {/* Our Business Units */}
@@ -59,7 +59,7 @@ const OurBusinessUnits = () => {
         </div>
 
         <Image
-          alt='Violin'
+          alt='SoilSense Flowchart'
           src='https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
           width={100}
           unoptimized
@@ -110,12 +110,12 @@ const OurBusinessUnits = () => {
         </div>
 
         <Image
-          alt='Violin'
-          src='https://images.unsplash.com/photo-1541636765-2682acc27f49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRyb25lJTIwZmFybWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+          alt='TechLand Flowchart'
+          src='/images/flowchart/techland-flow.png'
           width={100}
           unoptimized
           height={100}
-          className='object-cover w-full h-full aspect-auto sm:self-end rounded-3xl'
+          className='object-contain w-full h-full overflow-hidden aspect-auto sm:self-end rounded-3xl'
         />
       </article>
       {/* Organic Chef Unit */}
@@ -162,11 +162,11 @@ const OurBusinessUnits = () => {
 
         <Image
           alt='Organic Chef'
-          src='https://images.unsplash.com/photo-1591586116988-62fe65164f8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlZ2dpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60'
+          src='/images/flowchart/organicchef-flow.png'
           width={100}
           unoptimized
           height={100}
-          className='object-cover w-full h-full sm:self-end rounded-3xl'
+          className='object-contain w-full h-full overflow-hidden sm:self-end rounded-3xl'
         />
       </article>
     </section>
