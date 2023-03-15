@@ -8,18 +8,25 @@ import {
   HiOutlinePhone,
 } from "react-icons/hi";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 const ContactSection = () => {
+  const { t } = useTranslation("contact");
+
   return (
     <section>
       <div className='relative bg-white'>
         <div className='grid grid-cols-1 gap-8 px-6 py-12 mx-auto max-w-7xl md:py-24 md:grid-cols-2'>
           <div className='px-6 py-12 text-white md:px-10 bg-emerald-800 rounded-3xl'>
             <h2 className='text-4xl font-extrabold tracking-tight sm:text-5xl'>
-              Let&apos;s work together
+              {/* Let&apos;s work together */}
+              {t("contact-section.heading")}
             </h2>
             <address className='flex flex-col items-start justify-center gap-2 py-6 not-italic font-medium text-left'>
-              <h4 className='text-xl font-semibold'>Office Details</h4>
+              <h4 className='text-xl font-semibold'>
+                {/* Office Details */}
+                {t("contact-section.office-details")}
+              </h4>
               <div className='flex flex-col gap-4 mt-4'>
                 <a
                   className='inline-flex items-start space-x-2 duration-150 hover:text-emerald-500'
@@ -27,8 +34,9 @@ const ContactSection = () => {
                 >
                   <HiOutlineLocationMarker className='flex-shrink-0 w-5 h-5 mt-1 text-emerald-500' />
                   <p className='max-w-sm'>
-                    A26/12, 1st Floor, Chadha Market, Naya Bazar, Chandni Chowk,
-                    Punjab - 110728
+                    {/* A26/12, 1st Floor, Chadha Market, Naya Bazar, Chandni Chowk,
+                    Punjab - 110728 */}
+                    {t("contact-section.address")}
                   </p>
                 </a>
                 <div className='inline-flex items-start space-x-2 font-medium'>
@@ -71,7 +79,8 @@ const ContactSection = () => {
                 htmlFor='first-name'
                 className='block text-sm font-medium text-gray-700'
               >
-                First name
+                {/* First name */}
+                {t("contact-section.form.first-name")}
               </label>
               <div className='mt-1'>
                 <input
@@ -89,7 +98,8 @@ const ContactSection = () => {
                 htmlFor='last-name'
                 className='block text-sm font-medium text-gray-700'
               >
-                Last name
+                {/* Last name */}
+                {t("contact-section.form.last-name")}
               </label>
               <div className='mt-1'>
                 <input
@@ -107,7 +117,8 @@ const ContactSection = () => {
                 htmlFor='email'
                 className='block text-sm font-medium text-gray-700'
               >
-                Email
+                {/* Email */}
+                {t("contact-section.form.email")}
               </label>
               <div className='mt-1'>
                 <input
@@ -125,7 +136,8 @@ const ContactSection = () => {
                 htmlFor='company'
                 className='block text-sm font-medium text-gray-700'
               >
-                Company
+                {/* Company */}
+                {t("contact-section.form.company")}
               </label>
               <div className='mt-1'>
                 <input
@@ -144,10 +156,12 @@ const ContactSection = () => {
                   htmlFor='phone'
                   className='block text-sm font-medium text-gray-700'
                 >
-                  Phone
+                  {/* Phone */}
+                  {t("contact-section.form.phone")}
                 </label>
                 <span id='phone-description' className='text-sm text-gray-400'>
-                  Optional
+                  {/* Optional */}
+                  {t("contact-section.form.optional")}
                 </span>
               </div>
               <div className='mt-1'>
@@ -168,13 +182,15 @@ const ContactSection = () => {
                   htmlFor='how-can-we-help'
                   className='block text-sm font-medium text-gray-700'
                 >
-                  How can we help you?
+                  {/* How can we help you? */}
+                  {t("contact-section.form.message")}
                 </label>
                 <span
                   id='how-can-we-help-description'
                   className='text-sm text-gray-500'
                 >
-                  Max. 500 characters
+                  {/* Max. 500 characters */}
+                  {t("contact-section.form.max")}
                 </span>
               </div>
               <div className='mt-1'>
@@ -194,7 +210,8 @@ const ContactSection = () => {
                 htmlFor='how-did-you-hear-about-us'
                 className='block text-sm font-medium text-gray-700'
               >
-                How did you hear about us?
+                {/* How did you hear about us? */}
+                {t("contact-section.form.reference")}
               </label>
               <div className='mt-1'>
                 <input
@@ -208,7 +225,10 @@ const ContactSection = () => {
             </div>
             <div className='mt-2 text-right sm:col-span-2'>
               <button className='inline-flex items-center justify-center px-8 py-2 space-x-2 font-semibold text-center text-white duration-200 rounded-md bg-emerald-800 hover:bg-emerald-700'>
-                <span>Submit form</span>
+                <span>
+                  {/* Submit form */}
+                  {t("contact-section.form.submit")}
+                </span>
                 <HiArrowRight />
               </button>
             </div>

@@ -5,10 +5,12 @@ import LookingForCareer from "@/components/contact/LookingForCareer";
 import Layout from "@/components/layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation("contact");
   return (
-    <Layout title='Contact - SN Silos | Land of Technlogy'>
+    <Layout title={t("title")}>
       <ContactSection />
       <Location />
       <LookingForCareer />

@@ -8,8 +8,14 @@ import {
   TbFileInfo,
   TbMessage2,
 } from "react-icons/tb";
+import { useTranslation } from "next-i18next";
 
 const Custom404Page = () => {
+  const { t } = useTranslation("error");
+  const errorCards = t("cards", {
+    returnObjects: true,
+  });
+
   const router = useRouter();
   return (
     <section className='bg-white'>
@@ -17,14 +23,17 @@ const Custom404Page = () => {
         <div className='w-full '>
           <div className='flex flex-col items-center max-w-lg mx-auto text-center'>
             <p className='text-2xl font-semibold text-emerald-600'>
-              404 error!
+              {/* 404 error! */}
+              {t("error")}
             </p>
             <h1 className='mt-3 text-5xl font-bold text-gray-800 md:text-7xl'>
-              We lost this page
+              {/* We lost this page */}
+              {t("heading")}
             </h1>
             <p className='mt-4 text-gray-500'>
-              We searched high and low, but couldn’t find what you’re looking
-              for.Let’s find a better place for you to go.
+              {/* We couldn’t find what you’re looking for in our website. Let’s
+              find a better place for you to go. */}
+              {t("about")}
             </p>
 
             <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
@@ -34,14 +43,18 @@ const Custom404Page = () => {
               >
                 <TbArrowLeft />
 
-                <span>Go back</span>
+                <span>
+                  {/* Go back */}
+                  {t("go-back")}
+                </span>
               </button>
 
               <Link
                 href='/'
                 className='w-1/2 px-5 py-2 text-sm font-semibold text-white transition-colors duration-200 rounded-md bg-emerald-800 shrink-0 sm:w-auto hover:bg-emerald-700'
               >
-                Take me home
+                {/* Take me home */}
+                {t("home")}
               </Link>
             </div>
           </div>
@@ -52,15 +65,24 @@ const Custom404Page = () => {
                 <TbFileInfo className='w-8 h-8' />
               </span>
 
-              <h3 className='mt-6 font-medium text-gray-700'>About SN Silos</h3>
+              <h3 className='mt-6 font-medium text-gray-700'>
+                {/* About SN Silos */}
+                {errorCards[0].heading}
+              </h3>
 
-              <p className='mt-2 text-gray-500'>Want to know more about us?</p>
+              <p className='mt-2 text-gray-500'>
+                {/* Want to know more about us? */}
+                {errorCards[0].tagline}
+              </p>
 
               <Link
                 href='/about'
                 className='inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline'
               >
-                <span>Know more</span>
+                <span>
+                  {/* Know more */}
+                  {errorCards[0]["link-text"]}
+                </span>
 
                 <TbArrowRight />
               </Link>
@@ -72,18 +94,23 @@ const Custom404Page = () => {
               </span>
 
               <h3 className='mt-6 font-medium text-gray-700'>
-                Our blog & press
+                {/* Our blog & press */}
+                {errorCards[1].heading}
               </h3>
 
               <p className='mt-2 text-gray-500'>
-                Read the latest posts and photos.
+                {/* Read the latest posts and photos. */}
+                {errorCards[1].tagline}
               </p>
 
               <Link
                 href='/press'
                 className='inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline'
               >
-                <span>View lastest posts</span>
+                <span>
+                  {/* View lastest posts */}
+                  {errorCards[0]["link-text"]}
+                </span>
 
                 <TbArrowRight />
               </Link>
@@ -95,18 +122,23 @@ const Custom404Page = () => {
               </span>
 
               <h3 className='mt-6 font-medium text-gray-700'>
-                Want to talk with us?
+                {/* Want to talk with us? */}
+                {errorCards[2].heading}
               </h3>
 
               <p className='mt-2 text-gray-500'>
-                Can’t find what you’re looking for?
+                {/* Can’t find what you’re looking for? */}
+                {errorCards[2].tagline}
               </p>
 
               <Link
                 href='/contact'
                 className='inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline'
               >
-                <span>Chat with our team</span>
+                <span>
+                  {/* Chat with our team */}
+                  {errorCards[0]["link-text"]}
+                </span>
 
                 <TbArrowRight />
               </Link>
@@ -121,6 +153,6 @@ export default Custom404Page;
 
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["404", "common"])),
+    ...(await serverSideTranslations(locale, ["error", "common"])),
   },
 });

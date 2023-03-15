@@ -4,6 +4,7 @@ import CareerCard, { CareerDataProps } from "./CareerCard";
 import { nanoid } from "nanoid";
 import lodash from "lodash";
 import { TbArrowRight } from "react-icons/tb";
+import { useTranslation } from "next-i18next";
 
 export const careerData = [
   {
@@ -113,6 +114,8 @@ export type JobSelectedProps = {
   selectedItem?: CareerDataProps;
 };
 const DisplayCareers = () => {
+  const { t } = useTranslation("career");
+
   // const [jobDetailShow, setJobDetailShow] = useState()
   const [jobSelected, setJobSelected] = useState<JobSelectedProps>({
     selected: false,
@@ -128,11 +131,15 @@ const DisplayCareers = () => {
         <section className='flex items-center flex-1 px-6'>
           <div className='flex flex-col w-full'>
             <h1 className='text-4xl font-extrabold text-center drop-shadow lg:text-6xl 2xl:text-6xl'>
-              <span className='text-black'>Find your Career</span>
+              <span className='text-black'>
+                {/* Find your Career */}
+                {t("display-career.heading")}
+              </span>
             </h1>
 
             <p className='max-w-3xl mx-auto mt-6 text-lg text-center text-gray-800'>
-              Expand your career with us for a better and bright future.
+              {/* Expand your career with us for a better and bright future. */}
+              {t("display-career.tagline")}
             </p>
           </div>
         </section>
@@ -144,7 +151,8 @@ const DisplayCareers = () => {
                 <div className='relative h-full p-6 overflow-hidden wrap'>
                   <div className='mb-4'>
                     <span className='px-4 py-2 text-xl font-bold bg-gray-900 rounded-full text-gray-50 md:text-right'>
-                      Hottest Jobs 🔥
+                      {/* Hottest Jobs 🔥 */}
+                      {t("display-career.hottest-jobs")}
                     </span>
                   </div>
                   <div className='flex flex-col gap-3'>
@@ -163,15 +171,18 @@ const DisplayCareers = () => {
             {/* Display side */}
             <div className='sticky flex flex-col px-6 md:ml-16 md:top-36 lg:w-1/2 md:mt-16'>
               <p className='text-sm font-semibold tracking-widest uppercase text-emerald-600'>
-                Check Out Latest Jobs
+                {/* Check Out Latest Jobs */}
+                {t("display-career.sub-heading")}
               </p>
               <h2 className='my-2 mb-6 text-5xl font-bold leading-none md:text-6xl'>
-                Join the best teams in the industry
+                {/* Join the best teams in the industry */}
+                {t("display-career.sub-tagline")}
               </h2>
               <p className='mb-4 text-sm text-gray-800 md:text-base'>
-                Join our team of excellent and brilliant farmers, developers,
+                {/* Join our team of excellent and brilliant farmers, developers,
                 retailers, suppliers and businesses. Expand your career with us
-                for a better and bright future.
+                for a better and bright future. */}
+                {t("display-career.description")}
               </p>
 
               {/* Job Details here */}
@@ -202,7 +213,9 @@ const DisplayCareers = () => {
                   </dl>
                   <div className='my-6'>
                     <button className='bg-emerald-800 inline-flex justify-center items-center gap-1.5 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-semibold duration-200'>
-                      Apply now
+                      {/* Apply now */}
+                      {t("display-career.apply-now")}
+
                       <TbArrowRight />
                     </button>
                   </div>
@@ -212,7 +225,8 @@ const DisplayCareers = () => {
           </div>
           <div className='flex items-center justify-center'>
             <span className='px-4 py-2 font-semibold text-center text-gray-600 rounded-md bg-emerald-900/20'>
-              We&apos;ll keep you posted...
+              {/* We&apos;ll keep you posted... */}
+              {t("display-career.keep-posted")}
             </span>
           </div>
         </div>

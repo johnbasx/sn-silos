@@ -6,6 +6,7 @@ import type about from "@public/locales/en/about.json";
 import type career from "@public/locales/en/career.json";
 import type error from "@public/locales/en/error.json";
 import type press from "@public/locales/en/press.json";
+import type contact from "@public/locales/en/contact.json";
 
 interface I18nNamespaces {
   common: typeof common;
@@ -15,6 +16,7 @@ interface I18nNamespaces {
   career: typeof career;
   error: typeof error;
   press: typeof press;
+  contact: typeof contact;
 }
 
 declare module "i18next" {
