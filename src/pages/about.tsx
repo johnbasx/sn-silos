@@ -6,6 +6,7 @@ import Layout from "@/components/layout/Layout";
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import FAQ from "@/components/faq/FAQ";
 
 const AboutPage = () => {
   const { t } = useTranslation("about");
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <OurVision />
       <OurJourney />
       <Team />
+      <FAQ />
     </Layout>
   );
 };

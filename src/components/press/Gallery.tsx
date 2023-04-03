@@ -29,7 +29,7 @@ const Press = () => {
     <>
       <QuickView open={open} setOpen={setOpen} imageView={imageView} />
       <div className='py-12 bg-white lg:pb-16 lg:pt-24'>
-        <div className='px-6 py-8 max-w-7xl md:mx-auto lg:px-0'>
+        <div className='px-6 py-8 max-w-7xl md:mx-auto lg:px-6'>
           <Tab.Group>
             <div>
               <div className='flex flex-col w-full'>

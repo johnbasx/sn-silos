@@ -3,7 +3,7 @@ import { TbEye, TbFocus2, TbTarget, TbTelescope } from "react-icons/tb";
 import { useTranslation } from "next-i18next";
 import { nanoid } from "nanoid";
 
-const visionData = [
+export const visionData = [
   {
     id: nanoid(),
     name: "Our Vision",
@@ -40,7 +40,7 @@ const OurVision = () => {
 
   return (
     <div className='py-24 mx-auto max-w-7xl lg:py-32'>
-      <section className='px-6 lg:px-0'>
+      <section className='px-6 lg:px-6'>
         <div className='flex flex-col items-center justify-center gap-4'>
           <h1 className='text-4xl font-bold lg:text-5xl'>
             {/* What we aim to provide */}
