@@ -9,6 +9,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export const footerLinks = [
   {
@@ -212,14 +213,27 @@ const Footer = () => {
           <p className='text-xs leading-relaxed text-center text-emerald-200'>
             &copy; SN Silos Pvt Ltd 2023. All rights reserved.
             <br />
-            Powered by{" "}
-            <a
+          </p>
+          <div className='flex flex-col items-center justify-center mt-2'>
+            <span className='text-xs font-medium leading-relaxed text-emerald-50'>
+              Powered by{" "}
+            </span>
+            <Link
               href='https://fox-beta.com'
+              target='_blank'
+              referrerPolicy='no-referrer'
               className='font-semibold text-white underline transition hover:text-white/75'
             >
-              Foxbeta
-            </a>
-          </p>
+              <span className='sr-only'>Foxbeta</span>
+              <Image
+                height={100}
+                width={100}
+                className='object-contain w-auto h-4'
+                alt='Foxbeta'
+                src='/foxbeta-web.png'
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
